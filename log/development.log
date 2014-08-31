@@ -1,0 +1,1868 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 12:57:24 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "ga-dashboard_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.5) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+  [1m[36m (7.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140830013727)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (10.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "first_name" character varying(255), "last_name" character varying(255), "password_digest" character varying(255), "code" character varying(255), "expires_at" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140830013727"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateShoutouts (20140830013921)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "shoutouts" ("id" serial primary key, "content" text, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140830013921"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/index" for 127.0.0.1 at 2014-08-31 12:58:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 12:58:25 -0700
+
+ActionController::RoutingError (uninitialized constant SiteController):
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.5) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 12:58:51 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4:   <title>GaDashboard</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+    9: 
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4017421092993140808_70111308780680'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 12:58:52 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:17)):
+    3: <head>
+    4:   <title>GaDashboard</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+    9: 
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___4017421092993140808_70111308780680'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:00 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:16)):
+    15:   <!-- Latest compiled and minified JavaScript -->
+    16:   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    17: 
+    18:   <%= javascript_include_tag 'application' %>
+    19:   <%= csrf_meta_tags %>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4017421092993140808_70111279860920'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:01 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:16)):
+    15:   <!-- Latest compiled and minified JavaScript -->
+    16:   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    17: 
+    18:   <%= javascript_include_tag 'application' %>
+    19:   <%= csrf_meta_tags %>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4017421092993140808_70111279860920'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:10 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:15)):
+    15:   <!-- Latest compiled and minified JavaScript -->
+    16:   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    17: 
+    18:   <%= javascript_include_tag 'application' %>
+    19:   <%= csrf_meta_tags %>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4017421092993140808_70111279860920'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:11 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:15)):
+    15:   <!-- Latest compiled and minified JavaScript -->
+    16:   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    17: 
+    18:   <%= javascript_include_tag 'application' %>
+    19:   <%= csrf_meta_tags %>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4017421092993140808_70111279860920'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:12 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (require_tree argument must be a directory
+  (in /Users/steph/Sites/general-assembly/ga-dashbord/app/assets/javascripts/application.js:15)):
+    15:   <!-- Latest compiled and minified JavaScript -->
+    16:   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    17: 
+    18:   <%= javascript_include_tag 'application' %>
+    19:   <%= csrf_meta_tags %>
+    20: 
+    21: 
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___4017421092993140808_70111279860920'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:01:39 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 761ms (Views: 759.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:01:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:07:48 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `allusers' for #<#<Class:0x007f881f4faf48>:0x007f8820481390>):
+    13:       </div>
+    14:       <div class="modal-body">
+    15: 
+    16: <!--         <% if allusers  %>
+    17:         // include partial
+    18:         <%  elsif profile %>
+    19:         // include partial
+  app/views/sites/index.html.erb:16:in `_app_views_sites_index_html_erb__655771845989649073_70111316925000'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:07:49 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `allusers' for #<#<Class:0x007f881f4faf48>:0x007f88202788a0>):
+    13:       </div>
+    14:       <div class="modal-body">
+    15: 
+    16: <!--         <% if allusers  %>
+    17:         // include partial
+    18:         <%  elsif profile %>
+    19:         // include partial
+  app/views/sites/index.html.erb:16:in `_app_views_sites_index_html_erb__655771845989649073_70111316925000'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:08:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:10:44 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:10:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:15:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:15:38 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:38 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:15:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:16:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:18:07 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `showPartial' for #<#<Class:0x007f881f4faf48>:0x007f881f694d18>):
+    16:         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    17:       </div>
+    18:       <div class="modal-body">
+    19:         <% if showPartial === "login" %>
+    20:           <p>Login! </p>
+    21:         <% elsif showPartial === "signup" %>
+    22:           <p>Sign Up!</p>
+  app/views/sites/index.html.erb:19:in `_app_views_sites_index_html_erb__655771845989649073_70111309625960'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:18:08 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `showPartial' for #<#<Class:0x007f881f4faf48>:0x007f881f4531a8>):
+    16:         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+    17:       </div>
+    18:       <div class="modal-body">
+    19:         <% if showPartial === "login" %>
+    20:           <p>Login! </p>
+    21:         <% elsif showPartial === "signup" %>
+    22:           <p>Sign Up!</p>
+  app/views/sites/index.html.erb:19:in `_app_views_sites_index_html_erb__655771845989649073_70111309625960'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:18:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:19:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:20:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:21:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:22:14 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:22:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:26:26 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:21: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+'.freeze;         if (showPartial === "login"){ 
+                                               ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:23: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } else if (showPartial === "signup") { 
+                   ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:23: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+'.freeze;         } else if (showPartial === "signup") { 
+                                                        ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:25: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } else { 
+                   ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:27: syntax error, unexpected ';', expecting =>
+          !!!'.freeze;@output_buffer.append=( showP...
+                      ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:28: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } 
+                   ^):
+  app/views/sites/index.html.erb:21: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+  app/views/sites/index.html.erb:23: syntax error, unexpected '}', expecting keyword_end
+  app/views/sites/index.html.erb:23: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+  app/views/sites/index.html.erb:25: syntax error, unexpected '}', expecting keyword_end
+  app/views/sites/index.html.erb:27: syntax error, unexpected ';', expecting =>
+  app/views/sites/index.html.erb:28: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:26:26 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:21: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+'.freeze;         if (showPartial === "login"){ 
+                                               ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:23: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } else if (showPartial === "signup") { 
+                   ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:23: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+'.freeze;         } else if (showPartial === "signup") { 
+                                                        ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:25: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } else { 
+                   ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:27: syntax error, unexpected ';', expecting =>
+          !!!'.freeze;@output_buffer.append=( showP...
+                      ^
+/Users/steph/Sites/general-assembly/ga-dashbord/app/views/sites/index.html.erb:28: syntax error, unexpected '}', expecting keyword_end
+'.freeze;         } 
+                   ^):
+  app/views/sites/index.html.erb:21: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+  app/views/sites/index.html.erb:23: syntax error, unexpected '}', expecting keyword_end
+  app/views/sites/index.html.erb:23: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+  app/views/sites/index.html.erb:25: syntax error, unexpected '}', expecting keyword_end
+  app/views/sites/index.html.erb:27: syntax error, unexpected ';', expecting =>
+  app/views/sites/index.html.erb:28: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-08-31 13:26:32 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-08-31 13:29:22 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:29:25 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f40afe8>):
+    1: <% @showPartial = showThisPartial %>
+    2: <!-- Button trigger modal -->
+    3: <button class="btn btn-primary btn-lg" data-toggle="modal" id="login" data-target="#myModal">
+    4:   Login
+  app/views/sites/index.html.erb:1:in `_app_views_sites_index_html_erb__655771845989649073_70111308303860'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:29:26 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f220ed0>):
+    1: <% @showPartial = showThisPartial %>
+    2: <!-- Button trigger modal -->
+    3: <button class="btn btn-primary btn-lg" data-toggle="modal" id="login" data-target="#myModal">
+    4:   Login
+  app/views/sites/index.html.erb:1:in `_app_views_sites_index_html_erb__655771845989649073_70111308303860'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:29:41 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f8820122050>):
+    42:   });
+    43: </script>
+    44: 
+    45: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:45:in `_app_views_sites_index_html_erb__655771845989649073_70111315166820'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:29:42 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881bde2a88>):
+    42:   });
+    43: </script>
+    44: 
+    45: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:45:in `_app_views_sites_index_html_erb__655771845989649073_70111315166820'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:29:43 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881b9cb7d8>):
+    42:   });
+    43: </script>
+    44: 
+    45: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:45:in `_app_views_sites_index_html_erb__655771845989649073_70111315166820'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:11 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f61c7a0>):
+    43:   });
+    44: </script>
+    45: 
+    46: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:46:in `_app_views_sites_index_html_erb__655771845989649073_70111309124180'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:11 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f8820392a38>):
+    43:   });
+    44: </script>
+    45: 
+    46: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:46:in `_app_views_sites_index_html_erb__655771845989649073_70111309124180'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:12 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f6a4bc8>):
+    43:   });
+    44: </script>
+    45: 
+    46: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:46:in `_app_views_sites_index_html_erb__655771845989649073_70111309124180'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:18 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f471cc0>):
+    43:   });
+    44: </script>
+    45: 
+    46: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:46:in `_app_views_sites_index_html_erb__655771845989649073_70111308514120'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:18 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f280e20>):
+    43:   });
+    44: </script>
+    45: 
+    46: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:46:in `_app_views_sites_index_html_erb__655771845989649073_70111308514120'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:38 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f8820183c60>):
+    44:   });
+    45: </script>
+    46: 
+    47: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:47:in `_app_views_sites_index_html_erb__655771845989649073_70111315366680'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:30:39 -0700
+Processing by SitesController#index as HTML
+  Rendered sites/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881bf6a108>):
+    44:   });
+    45: </script>
+    46: 
+    47: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:47:in `_app_views_sites_index_html_erb__655771845989649073_70111315366680'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:38:40 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.3ms)
+  Rendered users/_new.html.erb (0.3ms)
+  Rendered sites/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881ba36308>):
+    25:   });
+    26: </script>
+    27: 
+    28: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:28:in `_app_views_sites_index_html_erb__655771845989649073_70111277970180'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:38:42 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.0ms)
+  Rendered sites/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `showThisPartial' for #<#<Class:0x007f881f40bbf0>:0x007f881f5dcf88>):
+    25:   });
+    26: </script>
+    27: 
+    28: <% @showPartial = showThisPartial %>
+  app/views/sites/index.html.erb:28:in `_app_views_sites_index_html_erb__655771845989649073_70111277970180'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:38:48 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:38:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.0ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:39:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.0ms)
+  Rendered sites/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:40:41 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:40:42 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:43 -0700
+
+
+Started GET "/index" for 127.0.0.1 at 2014-08-31 13:40:48 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/steph/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/steph/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:40:50 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.1ms)
+  Rendered sites/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:40:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.5ms)
+  Rendered users/_new.html.erb (0.6ms)
+  Rendered sites/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+Processing by SitesController#index as HTML
+  Rendered sessions/_new.html.erb (0.1ms)
+  Rendered users/_new.html.erb (0.5ms)
+  Rendered sites/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 13:41:35 -0700
