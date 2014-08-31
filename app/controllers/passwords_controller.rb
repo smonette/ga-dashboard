@@ -4,13 +4,17 @@ class PasswordsController < ApplicationController
   end
 
   def create
-    user.set_password_reset
-    UserMailer.password_reset(user).deliver
-    redirect_to root_url
+    user = User.find_by_email(params[:email])
+
+    if user
+      user.set_password_reset
+      UserMailer.password_reset(user).deliver
+    end
+    redirect_to '/', notice: "Email was sent with instructions"
   end
 
   def update
-    @user User.find(params[:id])
+    @user = User.find(params[:id])
 
     if @user
       update_password = params.require(:user).permit(:password, :password_confirmation)
@@ -18,6 +22,8 @@ class PasswordsController < ApplicationController
       if @user.save
         redirect_to '/'
       else
-        redirect_to '/'
+        redirect_to '/edit'
+      end
+    end
   end
 end

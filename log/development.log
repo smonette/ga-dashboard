@@ -4647,3 +4647,1177 @@ Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 15:39:16 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 15:39:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:02:22 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.6ms)
+  Rendered passwords/_new.html.erb (12.8ms)
+  Rendered sites/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007fd5f3e13680>:0x007fd5f79f5400>):
+     8: 
+     9:         <div class="form-group">
+    10:         <%= form_tag passwords_path do %>
+    11:         <%= f.text_field_tag :email, nil, placeholder: "Enter your email", class: "form-control" %>
+    12:         </div>
+    13:         
+    14:         <div class="form-group">
+  app/views/passwords/_new.html.erb:11:in `block in _app_views_passwords__new_html_erb__4412772100836646901_70278479445920'
+  app/views/passwords/_new.html.erb:10:in `_app_views_passwords__new_html_erb__4412772100836646901_70278479445920'
+  app/views/sites/index.html.erb:22:in `_app_views_sites_index_html_erb___2209753032923642670_70278479577020'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.5ms)
+  Rendered passwords/_new.html.erb (1.7ms)
+  Rendered users/_new.html.erb (4.0ms)
+  Rendered sites/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.0ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.0ms)
+  Rendered sites/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:02:37 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:03:06 -0700
+
+SyntaxError (/Users/adam/code/ga-dashbord/app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.find(params[:id])
+              ^
+/Users/adam/code/ga-dashbord/app/controllers/passwords_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+  app/controllers/passwords_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.5ms)
+  Rendered passwords/_new.html.erb (0.5ms)
+  Rendered users/_new.html.erb (2.2ms)
+  Rendered sites/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 30ms (Views: 12.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:31 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:03:41 -0700
+
+SyntaxError (/Users/adam/code/ga-dashbord/app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.find(params[:id])
+              ^
+/Users/adam/code/ga-dashbord/app/controllers/passwords_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+  app/controllers/passwords_controller.rb:24: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.4ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.4ms)
+  Rendered sites/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 27ms (Views: 12.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:03:55 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:04:06 -0700
+
+SyntaxError (/Users/adam/code/ga-dashbord/app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+    @user User.find(params[:id])
+              ^):
+  app/controllers/passwords_controller.rb:13: syntax error, unexpected tCONSTANT, expecting keyword_end
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.5ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.4ms)
+  Rendered sites/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 14.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:04:37 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:04:45 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+Completed 500 Internal Server Error in 7ms
+
+NameError (undefined local variable or method `user' for #<PasswordsController:0x007fd5f8c78118>):
+  app/controllers/passwords_controller.rb:7:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.5ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.5ms)
+  Rendered sites/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 31ms (Views: 12.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:06:07 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:06:16 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "code" = $1, "expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = 5[0m  [["code", "Hmh51K9LmTcxHdqgoQ0hmg"], ["expires_at", 1409540776], ["updated_at", "2014-08-31 23:06:16.264193"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+
+UserMailer#password_reset: processed outbound mail in 0.3ms
+Completed 500 Internal Server Error in 41ms
+
+NoMethodError (undefined method `email' for nil:NilClass):
+  app/mailers/user_mailer.rb:5:in `password_reset'
+  app/controllers/passwords_controller.rb:11:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.7ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.4ms)
+  Rendered sites/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 28ms (Views: 12.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:08:44 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:08:52 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "code" = $1, "expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = 5[0m  [["code", "ZE0niiDe5CU7isN9h4XnKQ"], ["expires_at", 1409540932], ["updated_at", "2014-08-31 23:08:52.938529"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered user_mailer/password_reset.html.erb (1.0ms)
+  Rendered user_mailer/password_reset.text.erb (0.3ms)
+
+UserMailer#password_reset: processed outbound mail in 27.4ms
+
+Sent mail to asbudik@gmail.com (30.2ms)
+Date: Sun, 31 Aug 2014 16:08:52 -0700
+From: from@example.com
+To: asbudik@gmail.com
+Message-ID: <5403ab04ef104_43ac3feaf9ea187439712@Adams-MacBook-Pro.local.mail>
+Subject: Reset your password
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5403ab04ebc21_43ac3feaf9ea187439695";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5403ab04ebc21_43ac3feaf9ea187439695
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pasUserMailer#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+----==_mimepart_5403ab04ebc21_43ac3feaf9ea187439695
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Password Reset</h1>
+
+<a href="http://localhost:3000/passwords/ZE0niiDe5CU7isN9h4XnKQ/edit">Reset Password</a>
+
+----==_mimepart_5403ab04ebc21_43ac3feaf9ea187439695--
+
+Completed 500 Internal Server Error in 92ms
+
+NameError (undefined local variable or method `root_url' for #<PasswordsController:0x007fd5f8c3bf88>):
+  app/controllers/passwords_controller.rb:13:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.1ms)
+
+
+Started GET "/passwords/ZE0niiDe5CU7isN9h4XnKQ/edit" for 127.0.0.1 at 2014-08-31 16:08:56 -0700
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id"=>"ZE0niiDe5CU7isN9h4XnKQ"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."code" = 'ZE0niiDe5CU7isN9h4XnKQ' LIMIT 1[0m
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template passwords/edit, application/edit with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/adam/code/ga-dashbord/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.7ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.5ms)
+  Rendered sites/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 31ms (Views: 13.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:35 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:15:44 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "code" = $1, "expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = 5  [["code", "YDhxZRAZdxU8PvBMdzU18A"], ["expires_at", 1409541344], ["updated_at", "2014-08-31 23:15:44.651261"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  Rendered user_mailer/password_reset.html.erb (0.4ms)
+  Rendered user_mailer/password_reset.text.erb (0.0ms)
+
+UserMailer#password_reset: processed outbound mail in 19.2ms
+
+Sent mail to asbudik@gmail.com (24.2ms)
+Date: Sun, 31 Aug 2014 16:15:44 -0700
+From: from@example.com
+To: asbudik@gmail.com
+Message-ID: <5403aca0a9c68_43ac3feafa499ee8399c5@Adams-MacBook-Pro.local.mail>
+Subject: Reset your password
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5403aca0a7751_43ac3feafa499ee83983d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5403aca0a7751_43ac3feafa499ee83983d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pasUserMailer#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+----==_mimepart_5403aca0a7751_43ac3feafa499ee83983d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Password Reset</h1>
+
+<a href="http://localhost:3000/passwords/YDhxZRAZdxU8PvBMdzU18A/edit">Reset Password</a>
+
+----==_mimepart_5403aca0a7751_43ac3feafa499ee83983d--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:15:44 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (2.5ms)
+  Rendered passwords/_new.html.erb (1.0ms)
+  Rendered users/_new.html.erb (4.8ms)
+  Rendered sites/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 31ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:15:45 -0700
+
+
+Started GET "/passwords/YDhxZRAZdxU8PvBMdzU18A/edit" for 127.0.0.1 at 2014-08-31 16:15:49 -0700
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id"=>"YDhxZRAZdxU8PvBMdzU18A"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."code" = 'YDhxZRAZdxU8PvBMdzU18A' LIMIT 1[0m
+  Rendered passwords/edit.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/Users/adam/code/ga-dashbord/app/views/passwords/edit.html.erb:2: syntax error, unexpected =>
+...=> {:action => "update", id: => @user.id}, :html => {:method...
+...                               ^
+/Users/adam/code/ga-dashbord/app/views/passwords/edit.html.erb:2: syntax error, unexpected '}', expecting keyword_end
+...n => "update", id: => @user.id}, :html => {:method => "put"}...
+...                               ^
+/Users/adam/code/ga-dashbord/app/views/passwords/edit.html.erb:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+... :html => {:method => "put"} do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/adam/code/ga-dashbord/app/views/passwords/edit.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/passwords/edit.html.erb:2: syntax error, unexpected =>
+  app/views/passwords/edit.html.erb:2: syntax error, unexpected '}', expecting keyword_end
+  app/views/passwords/edit.html.erb:2: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/passwords/edit.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "code" = $1, "expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = 5[0m  [["code", "xvumhFB3oSh0mwlowjiNeA"], ["expires_at", 1409541467], ["updated_at", "2014-08-31 23:17:47.206851"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered user_mailer/password_reset.html.erb (0.4ms)
+  Rendered user_mailer/password_reset.text.erb (0.0ms)
+
+UserMailer#password_reset: processed outbound mail in 15.9ms
+
+Sent mail to asbudik@gmail.com (27.4ms)
+Date: Sun, 31 Aug 2014 16:17:47 -0700
+From: from@example.com
+To: asbudik@gmail.com
+Message-ID: <5403ad1b37abc_43ac3feafa528d6440178@Adams-MacBook-Pro.local.mail>
+Subject: Reset your password
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5403ad1b361ba_43ac3feafa528d64400e2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5403ad1b361ba_43ac3feafa528d64400e2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pasUserMailer#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+----==_mimepart_5403ad1b361ba_43ac3feafa528d64400e2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Password Reset</h1>
+
+<a href="http://localhost:3000/passwords/xvumhFB3oSh0mwlowjiNeA/edit">Reset Password</a>
+
+----==_mimepart_5403ad1b361ba_43ac3feafa528d64400e2--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 65ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (2.6ms)
+  Rendered passwords/_new.html.erb (2.7ms)
+  Rendered users/_new.html.erb (5.2ms)
+  Rendered sites/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 34ms (Views: 29.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:47 -0700
+
+
+Started GET "/passwords/xvumhFB3oSh0mwlowjiNeA/edit" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id"=>"xvumhFB3oSh0mwlowjiNeA"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."code" = 'xvumhFB3oSh0mwlowjiNeA' LIMIT 1
+  Rendered passwords/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:17:49 -0700
+
+
+Started PUT "/passwords/5" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+Processing by PasswordsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Reset Password", "id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "password_digest" = $1, "updated_at" = $2 WHERE "users"."id" = 5  [["password_digest", "$2a$10$k9rLfepy037Z0nJzU345v.t9UkygK/xdkw/YKnr76y1YS7UzcR7eO"], ["updated_at", "2014-08-31 23:18:14.123826"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.0ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.2ms)
+  Rendered sites/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:14 -0700
+
+
+Started POST "/" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"email"=>"asbudik@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (3.4ms)
+  Rendered sites/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:38 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-08-31 16:18:47 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (1.9ms)
+  Rendered sites/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:48 -0700
+
+
+Started POST "/passwords" for 127.0.0.1 at 2014-08-31 16:18:55 -0700
+Processing by PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "email"=>"asbudik@gmail.com", "commit"=>"Reset Password"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "code" = $1, "expires_at" = $2, "updated_at" = $3 WHERE "users"."id" = 5  [["code", "rpsXetpMxIkG7eSFSg5TAg"], ["expires_at", 1409541535], ["updated_at", "2014-08-31 23:18:55.867917"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  Rendered user_mailer/password_reset.html.erb (0.4ms)
+  Rendered user_mailer/password_reset.text.erb (0.1ms)
+
+UserMailer#password_reset: processed outbound mail in 19.2ms
+
+Sent mail to asbudik@gmail.com (26.2ms)
+Date: Sun, 31 Aug 2014 16:18:55 -0700
+From: from@example.com
+To: asbudik@gmail.com
+Message-ID: <5403ad5fd9ed9_43ac3feaf9f01058403a9@Adams-MacBook-Pro.local.mail>
+Subject: Reset your password
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5403ad5fd8138_43ac3feaf9f0105840280";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5403ad5fd8138_43ac3feaf9f0105840280
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+pasUserMailer#password_reset
+
+, find me in app/views/user_mailer/password_reset.text.erb
+
+----==_mimepart_5403ad5fd8138_43ac3feaf9f0105840280
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<h1>Password Reset</h1>
+
+<a href="http://localhost:3000/passwords/rpsXetpMxIkG7eSFSg5TAg/edit">Reset Password</a>
+
+----==_mimepart_5403ad5fd8138_43ac3feaf9f0105840280--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 64ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:18:55 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (2.2ms)
+  Rendered passwords/_new.html.erb (0.9ms)
+  Rendered users/_new.html.erb (3.4ms)
+  Rendered sites/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:56 -0700
+
+
+Started GET "/passwords/rpsXetpMxIkG7eSFSg5TAg/edit" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id"=>"rpsXetpMxIkG7eSFSg5TAg"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."code" = 'rpsXetpMxIkG7eSFSg5TAg' LIMIT 1[0m
+  Rendered passwords/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:18:57 -0700
+
+
+Started PUT "/passwords/5" for 127.0.0.1 at 2014-08-31 16:19:03 -0700
+Processing by PasswordsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Reset Password", "id"=>"5"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.9ms)[0m  SELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE ("users"."email" = 'asbudik@gmail.com' AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/edit
+Completed 302 Found in 85ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2014-08-31 16:19:03 -0700
+
+ActionController::RoutingError (No route matches [GET] "/edit"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.6ms)
