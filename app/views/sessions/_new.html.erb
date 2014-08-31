@@ -6,6 +6,27 @@
       </div>
       <div class="modal-body">
         <h1>login form goes here!</h1>
+
+
+        <%= form_for :user do |f| %>
+        <div class="form-group">
+        <%= f.email_field :email, placeholder: "Enter E-mail", class: "form-control" %>
+        </div>
+        <div class="form-group">
+        <%= f.password_field :password, placeholder: "Enter Password", class: "form-control" %>
+        </div>
+        <div class="form-group">
+        <%= f.submit "Login", class: "form-control btn btn-success"%>
+        </div>
+        <% end %>
+
+        <a data-dismiss="modal" href data-toggle="modal" data-target="#signupModal">
+          Not a member? Sign up here.
+        </a>
+
+
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

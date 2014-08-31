@@ -15,7 +15,7 @@
           <%= f.text_field :last_name, placeholder: "Last Name", class: "form-control" %>
           </div>
           <div class="form-group">
-          <%= f.text_field :email, placeholder: "john@example.com", class: "form-control" %>
+          <%= f.email_field :email, placeholder: "john@example.com", class: "form-control" %>
           </div>
           <div class="form-group">
           <%= f.password_field :password, placeholder: "Enter Password", class: "form-control"%>
@@ -31,6 +31,9 @@
           <%= f.submit "Sign Up!", class: "form-control btn btn-success" %>
         <% end %>
 
+        <a data-dismiss="modal" href data-toggle="modal" data-target="#loginModal">
+          Already a member? Login here.
+        </a>
 
 
       </div>

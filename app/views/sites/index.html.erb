@@ -7,11 +7,12 @@
   Signup
 </button>
 
-<% if session[:id] == nil %>
+<% if session[:user_id] == nil %>
 <div class="idnil"></div>
 <% else %>
 <div class="iduser">Hello, <%= @current_user.first_name %></div>
 <% end %>
+
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <%= render partial: "sessions/new"   %>
