@@ -14,15 +14,18 @@ class UsersController < ApplicationController
       :password_confirmation,
       :image_url)
     new_file_path = params[:user].permit(:image_url)
+    if !new_file_path.blank?
+      key = Time.now.to_time.to_i 
 
-    key = Time.now.to_time.to_i 
+      new_bucket = S3_CLIENT.buckets['gadashboard']
+      new_object = new_bucket.objects[key.to_s]
 
-    new_bucket = S3_CLIENT.buckets['gadashboard']
-    new_object = new_bucket.objects[key.to_s]
-
-    new_object.write(Pathname.new(new_file_path['image_url'].tempfile.path))
-    
-    new_user[:image_url] = new_object.public_url.to_s
+      new_object.write(Pathname.new(new_file_path['image_url'].tempfile.path))
+      
+      new_user[:image_url] = new_object.public_url.to_s
+    else
+      new_user[:image_url] = 'https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg'
+    end
     @user = User.new(new_user)
 
     if @user.save
