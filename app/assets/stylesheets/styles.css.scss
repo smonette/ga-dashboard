@@ -11,6 +11,7 @@ $black: #0D0D0D;
 
 $box-height: 270px;
 
+
 body {
   background: url('dark_fish_skin.png') 0 0 repeat;
   font-family: 'Lato', sans-serif;
@@ -46,3 +47,22 @@ body {
   h3 { margin-top: 0; }
 
 }
+ul#shoutout_container {
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  margin-bottom: 20px;
+  overflow: scroll;
+
+  span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  li {
+    list-style: none;
+    padding: 15px 0;
+    border-top: 1px solid $lt-grey;
+  }
+}
+
