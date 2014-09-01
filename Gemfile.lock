@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
+    awesome_print (1.2.0)
     aws-sdk (1.52.0)
       aws-sdk-v1 (= 1.52.0)
     aws-sdk-v1 (1.52.0)
@@ -186,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   aws-sdk
   bcrypt (~> 3.1.7)
   coffee-rails (~> 4.0.0)
@@ -193,6 +195,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  nokogiri
   pg
   pry-rails
   rails (= 4.1.5)
