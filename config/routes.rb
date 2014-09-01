@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get "/", to: "sites#index"
+  get "/", to: "sites#index", as: 'root'
   get "/about", to: "sites#show"
 
   resources :users do

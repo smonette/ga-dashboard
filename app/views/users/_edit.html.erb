@@ -23,6 +23,7 @@
           <div class="form-group">
           <%= f.submit "Edit Me", class: "form-control btn btn-success" %>
         <% end %>
+        <%= button_to  "Delete This User?", user_path(@current_user), method: :delete, class: "btn-default" %>
       </div>
 
     </div>
