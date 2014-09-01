@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   get "/", to: "sites#index", as: 'root'
   get "/about", to: "sites#show"
 
-  resources :users do
-    post "/", to: "shoutouts#create"
-  end
+  resources :users
+  resources :shoutouts
+
+  post "/shoutouts", to: 'shoutouts#create'
 
   get "/about_us", to: "sites#about"
   get "/login", to: "sessions#new"

@@ -13,3 +13,32 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).on('page:load ready', function() {
+  $('.new_shoutout').on("submit", function(e) {
+    e.preventDefault();
+    var content = $('#shoutout_content').val();
+    var formURL = $(this).attr('action');
+
+    function shoutoutAjax() {
+
+      $.ajax({
+        dataType: "json",
+        url: formURL,
+        type: 'POST',
+        data: {shoutout: {"content": content}},
+        success: function(data) {
+          
+          $('#shoutout_container').append(
+            "<li>" + content + "</li>",
+            '<p style="color:green">Comment saved!</p>');
+        },
+        error: function(error) {
+          console.log("ERROR", error);
+          console.log('CONTENT', content);
+        }
+      });
+    }
+    shoutoutAjax();
+
+  });
+})
