@@ -7,16 +7,24 @@ class SessionsController < ApplicationController
     @user = User.authenticate(params[:user][:email], params[:user][:password])
 
     if @user
-      session[:user_id] = @user.id
+      session[:id] = @user.id
+      puts "!!!!!!!!!!create #{session[:id]}!!!!!!!!!!!!"
+
+      puts "!!!!logged in!!!!!"
+
       redirect_to '/', notice: "you're logged in"
     else
+
+      puts "!!!!!something went wrong!!!!!"
+
       flash.now[:error] = "Something went wrong"
-      render :new
+      redirect_to '/'
     end
   end
 
   def destroy
-    session[:user_id] = nil
+    session[:id] = nil
+    puts "!!!!!!!!!!!destroy #{session[:id]}!!!!!!!!!!!"
 
     redirect_to '/', notice: "you're logged out"
   end

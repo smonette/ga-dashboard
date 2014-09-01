@@ -1,7 +1,8 @@
 class SitesController < ApplicationController
   def index
     @user = User.new
-    @current_user = User.find_by_id(5)
+    puts "!!!!!!!!!!!!!!!#{session[:id]}!!!!!!!!!!!!!!!!!!!!!!!!"
+    @current_user = User.find_by_id(session[:id])
     # puts "!!!!!!!!!!!!!!#{@current_user}!!!!!!!!!!!!!!!!!"
   end
   def show
