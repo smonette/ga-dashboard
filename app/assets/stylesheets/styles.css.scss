@@ -1,0 +1,37 @@
+/* Color Scheme */
+
+$white:#FCFCFC;
+$lt-grey: #9D9D9D;
+$md-grey: #6C6C6C;
+$dk-grey: #252626;
+$red: #FF1F1F;
+$black: #0D0D0D;
+
+body {
+  background: url('dark_fish_skin.png') 0 0 repeat;
+
+  .header{
+    background-color: $white;
+    border-bottom: 10px solid $lt-grey;
+    margin-bottom: 20px;
+  }
+  .box {
+    background-color: $white;
+    height: 200px;
+  }
+}
+
+
+.idnil {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+
+}
+
+
+.iduser {
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
