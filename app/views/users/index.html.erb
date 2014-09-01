@@ -1,0 +1,10 @@
+<style>
+.showuser {
+  color: white;
+}
+</style>
+<div class="container showuser">
+<% @users.each do |user| %>
+  <a href="users/<%= user.id %>"><%= user.first_name %> <%= user.last_name %></a> <%= user.email %><br>
+<% end %>
+</div>

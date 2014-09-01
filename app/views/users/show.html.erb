@@ -1,0 +1,16 @@
+<style>
+.showuser {
+  color: white;
+}
+.profilepic {
+  height: 100px;
+  display: inline-block;
+}
+</style>
+
+<div class="showuser">
+  <img class="profilepic" src="<%= @user.image_url %>"><br>
+  <%= @user.first_name %>
+  <%= @user.last_name %><br>
+  <%= @user.email %>
+</div>
