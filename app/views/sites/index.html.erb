@@ -10,6 +10,10 @@
       <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
         Signup
       </button>
+      
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#editModal">
+        Edit
+      </button>
 
     </div>
   </div>
@@ -27,21 +31,31 @@
 
 
 
-<% if session[:user_id] == nil %>
+<% if session[:id] == nil %>
 <div class="idnil"></div>
-<% else %>
-<div class="iduser">Hello, <%= @current_user.first_name %></div>
-<% end %>
 
-<!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <%= render partial: "sessions/new"   %>
-</div>
-
-<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <%= render partial: "passwords/new"   %>
 </div>
 
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <%= render partial: "users/new", :locals => {:user => @user} %>
 </div>
+
+<% else %>
+<div class="iduser">Hello, <%= @current_user.first_name %></div>
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <%= render partial: "users/edit", :locals => {:user => @current_user} %>
+  </div>
+<% end %>
+
+<!-- Modal -->
+
+
+
+
+<div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <%= render partial: "passwords/new"   %>
+</div>
+
