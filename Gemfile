@@ -31,7 +31,7 @@ gem 'handlebars_assets'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-group :development do 
+group :development do
   gem "letter_opener"
 end
 
@@ -39,6 +39,9 @@ gem 'aws-sdk'
 
 gem 'twitter'
 gem 'twitter-text'
+
+gem 'nokogiri'
+gem 'awesome_print'
 
 # Use unicorn as the app server
 # gem 'unicorn'
