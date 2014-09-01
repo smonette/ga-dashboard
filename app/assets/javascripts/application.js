@@ -27,10 +27,11 @@ $(document).on('page:load ready', function() {
         type: 'POST',
         data: {shoutout: {"content": content}},
         success: function(data) {
-          
-          $('#shoutout_container').append(
-            "<li>" + content + "</li>",
-            '<p style="color:green">Comment saved!</p>');
+
+          $('#shoutout_container').prepend(
+            "<li>" + content + " <span class='label label-success'>Saved</span></li>"
+            );
+            $("#shoutout_content").val("");
         },
         error: function(error) {
           console.log("ERROR", error);
