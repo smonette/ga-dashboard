@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
 /* Color Scheme */
 
 $white:#FCFCFC;
@@ -7,31 +9,40 @@ $dk-grey: #252626;
 $red: #FF1F1F;
 $black: #0D0D0D;
 
+$box-height: 270px;
+
 body {
   background: url('dark_fish_skin.png') 0 0 repeat;
-
-  .header{
-    background-color: $white;
-    border-bottom: 10px solid $lt-grey;
-    margin-bottom: 20px;
-  }
-  .box {
-    background-color: $white;
-    height: 200px;
-  }
+  font-family: 'Lato', sans-serif;
 }
 
-
-.idnil {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-
+.header{
+  background-color: $white;
+  border-bottom: 10px solid $lt-grey;
+  margin-bottom: 20px;
+  .right {
+    float: right;
+    margin: 20px 0 20px 20px;
+  }
 }
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: $white;
+  span{ padding: 0 15px;}
+}
+.box {
+  background-color: $white;
+  height: $box-height;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
 
+  &.tall { height: ($box-height * 2) + 40; }
 
-.iduser {
-  height: 100px;
-  width: 100px;
-  background-color: purple;
+  h3 { margin-top: 0; }
+
 }

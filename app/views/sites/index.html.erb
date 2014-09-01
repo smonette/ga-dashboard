@@ -1,28 +1,60 @@
 <div class="row">
-  <div class="col-md-4">
-    <div class="box">
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box">
+          <!-- Button trigger modal -->
+          <% if session[:id] == nil %>
+            <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#loginModal">
+              Login
+            </button>
 
-      <!-- Button trigger modal -->
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal">
-        Login
-      </button>
-
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
-        Signup
-      </button>
-      
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#editModal">
-        Edit
-      </button>
-
+            <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#signupModal">
+              Signup
+            </button>
+          <% else %>
+            <h3>Welcome, <%= @current_user.first_name %>!</h3>
+            <br>
+            <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#editModal">
+              Edit Your Profile
+            </button>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box tall">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box"></div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="box"></div>
+
+
+
+  <div class="col-sm-4">
+    <div class="box tall"></div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="box">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <div class="box"></div>
-  </div>
+
 </div>
 
 
@@ -32,22 +64,18 @@
 
 
 <% if session[:id] == nil %>
-<div class="idnil"></div>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <%= render partial: "sessions/new"   %>
+  </div>
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <%= render partial: "sessions/new"   %>
-</div>
-
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <%= render partial: "users/new", :locals => {:user => @user} %>
-</div>
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <%= render partial: "users/new", :locals => {:user => @user} %>
+  </div>
 
 <% else %>
-<div class="iduser">Hello, <%= @current_user.first_name %></div>
-
-<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <%= render partial: "users/edit", :locals => {:user => @current_user} %>
-  </div>
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <%= render partial: "users/edit", :locals => {:user => @current_user} %>
+    </div>
 <% end %>
 
 <!-- Modal -->

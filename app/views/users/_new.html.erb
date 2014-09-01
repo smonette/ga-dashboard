@@ -5,8 +5,6 @@
         <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
       </div>
       <div class="modal-body">
-        <h1>signup form goes here</h1>
-
         <%= form_for @user do |f| %>
           <div class="form-group">
           <%= f.text_field :first_name, placeholder: "First Name", class: "form-control" %>
@@ -36,10 +34,5 @@
         Already a member? Login here.
       </a>
 
-
-      
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
     </div>
   </div>
