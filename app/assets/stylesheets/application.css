@@ -13,15 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.idnil {
-  height: 100px;
-  width: 100px;
-  background-color: green;
-}
-
-.iduser {
-  height: 100px;
-  width: 100px;
-  background-color: purple;
-}
