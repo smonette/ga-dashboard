@@ -1,8 +1,13 @@
 class SitesController < ApplicationController
   def index
     @user = User.new
-    puts "!!!!!!!!!!!!!!!#{session[:id]}!!!!!!!!!!!!!!!!!!!!!!!!"
+    
+    @shoutout = Shoutout.new
+
+    @shoutouts_all = Shoutout.all
+
     @current_user = User.find_by_id(session[:id])
+
     # puts "!!!!!!!!!!!!!!#{@current_user}!!!!!!!!!!!!!!!!!"
   end
   def show
