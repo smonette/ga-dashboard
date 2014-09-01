@@ -35,6 +35,11 @@ group :development do
   gem "letter_opener"
 end
 
+gem 'aws-sdk'
+
+gem 'twitter'
+gem 'twitter-text'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

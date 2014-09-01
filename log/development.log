@@ -5821,3 +5821,519 @@ ActionController::RoutingError (No route matches [GET] "/edit"):
   Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
   Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
   Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:52:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (18.7ms)
+  Rendered passwords/_new.html.erb (1.1ms)
+  Rendered users/_new.html.erb (13.5ms)
+  Rendered sites/index.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 122ms (Views: 93.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:52:45 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:52:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:45 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:52:46 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:53:21 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Adam", "last_name"=>"Budik", "email"=>"asbudik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2db8c8f00 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-c76r77>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation, image_url
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `[]' for #<AWS::S3::Bucket:gadashboard>):
+  app/controllers/users_controller.rb:20:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (6.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.1ms)
+  Rendered sites/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 27ms (Views: 16.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:54:24 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:54:44 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Adam", "last_name"=>"Budik", "email"=>"asbudik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2dbb200f0 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-2dqkzk>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation, image_url
+Completed 500 Internal Server Error in 26ms
+
+NameError (undefined local variable or method `new_url' for #<UsersController:0x007fe2dbb232a0>):
+  app/controllers/users_controller.rb:22:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (7.0ms)
+  Rendered passwords/_new.html.erb (0.8ms)
+  Rendered users/_new.html.erb (2.6ms)
+  Rendered sites/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 30ms (Views: 19.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:55:23 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:55:40 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Adam", "last_name"=>"Budik", "email"=>"asbudik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2dc579010 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-1vrddb4>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation, image_url
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `tempfile' for nil:NilClass):
+  app/controllers/users_controller.rb:23:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (6.4ms)
+  Rendered passwords/_new.html.erb (0.8ms)
+  Rendered users/_new.html.erb (4.1ms)
+  Rendered sites/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 35ms (Views: 22.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:56:48 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:57:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Adam", "last_name"=>"Budik", "email"=>"asbudik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2e020a330 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-rkx6p1>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `tempfile' for nil:NilClass):
+  app/controllers/users_controller.rb:23:in `create'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (7.8ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.3ms)
+  Rendered sites/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:57:43 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:57:56 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Adam", "last_name"=>"Budik", "email"=>"asbudik@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2e0516b28 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-1fcoosf>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation
+[AWS S3 200 3.212472 0 retries] put_object(:bucket_name=>"gadashboard",:content_length=>176078,:data=>#<File:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-1fcoosf (176078 bytes)>,:key=>"1409529476")  
+
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asbudik@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-08-31 23:58:00.253746"], ["email", "asbudik@gmail.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$10$KOGfkD7xzaXiofYzXUdzRePUN5tNtePkzXq3OJtJrbYE741qE2yny"], ["updated_at", "2014-08-31 23:58:00.253746"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3323ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.3ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (1.7ms)
+  Rendered sites/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:58:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (7.4ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (2.2ms)
+  Rendered sites/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 32ms (Views: 18.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:31 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 16:59:46 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"adam", "last_name"=>"budik", "email"=>"dsafsd@budik.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2dcfe5968 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-kbq0s7>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: image_url
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation
+[AWS S3 200 2.817664 0 retries] put_object(:bucket_name=>"gadashboard",:content_length=>176078,:data=>#<File:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-kbq0s7 (176078 bytes)>,:key=>"1409529586")  
+
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsafsd@budik.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-08-31 23:59:49.238643"], ["email", "dsafsd@budik.com"], ["first_name", "adam"], ["last_name", "budik"], ["password_digest", "$2a$10$CztM6X4qGeCiM5KjVTPPLe5S6KAMbACeGWffT6vwZWZmhdhGFkn.O"], ["updated_at", "2014-08-31 23:59:49.238643"]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 2905ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1[0m
+  Rendered sessions/_new.html.erb (1.0ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (1.7ms)
+  Rendered sites/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 16:59:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (6.8ms)
+  Rendered passwords/_new.html.erb (0.5ms)
+  Rendered users/_new.html.erb (2.5ms)
+  Rendered sites/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 17:01:56 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-08-31 17:02:11 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"adam", "last_name"=>"budik", "email"=>"asbudik@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007fe2e0319168 @tempfile=#<Tempfile:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-1v4si1b>, @original_filename="cat-04.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image_url]\"; filename=\"cat-04.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Sign Up!"}
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation
+[AWS S3 200 2.768822 0 retries] put_object(:bucket_name=>"gadashboard",:content_length=>176078,:data=>#<File:/var/folders/ct/54gmzbld4bxclvd4lgvqltqr0000gn/T/RackMultipart20140831-20225-1v4si1b (176078 bytes)>,:key=>"1409529731")  
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'asbudik@live.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "image_url", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-09-01 00:02:14.302702"], ["email", "asbudik@live.com"], ["first_name", "adam"], ["image_url", "https://gadashboard.s3.amazonaws.com/1409529731"], ["last_name", "budik"], ["password_digest", "$2a$10$HtmqDZ7lk1yTE135zhljleKDQS...TMEgjIo4P9ZE8FFvlA.tDtxm"], ["updated_at", "2014-09-01 00:02:14.302702"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2860ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 5 LIMIT 1
+  Rendered sessions/_new.html.erb (1.0ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered users/_new.html.erb (1.6ms)
+  Rendered sites/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/passwords.css?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-31 17:02:14 -0700
