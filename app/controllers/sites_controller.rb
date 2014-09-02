@@ -1,5 +1,5 @@
 class SitesController < ApplicationController
-  before_action :nokogiri_soups
+  before_action :nokogiri_soups, :nokogiri_trucks
   def index
     @user = User.new
 
@@ -13,6 +13,7 @@ class SitesController < ApplicationController
   def show
 
   end
+
   def nokogiri_trucks
     urlTrucks = open('http://www.gfoodlounge.com/truckschedule/').read
 
@@ -20,10 +21,12 @@ class SitesController < ApplicationController
     pageTrucks = Nokogiri::HTML(urlTrucks)
     @trucks = []
 
-    @trucks = pageTrucks.css('.title a').map do |link|
-      {title: link.text, url: link["href"]}
+    @trucks = pageTrucks.css('.otg-vendor-data a').map do |truck|
+      {title: truck.text, url: truck["href"]}
     end
+    p @trucks
   end
+
   def nokogiri_soups
     urlSoups = open('http://www.specialtys.com/Location.aspx?Store=SF09#TodaysSoups').read
 
@@ -38,6 +41,7 @@ class SitesController < ApplicationController
      {name: soup.text.strip, img: @images }
     end
   end
+
   def nokogiri_ga
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
 
