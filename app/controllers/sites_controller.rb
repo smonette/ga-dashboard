@@ -20,10 +20,20 @@ class SitesController < ApplicationController
     # Nokogiri is the module name, HTML is the class name
     pageTrucks = Nokogiri::HTML(urlTrucks)
     @trucks = []
+    today = Time.now.strftime("%A, %B %d")
+    # today = "Friday, September 05"
 
-    @trucks = pageTrucks.css('.otg-vendor-data a').map do |truck|
-      {title: truck.text, url: truck["href"]}
+    rows = pageTrucks.css('.entry-content > div')
+    rows.each do |row|
+
+      if row.text.match(today)
+        @trucks = row.css('.otg-vendor-data a:first-child').map do |truck|
+          {title: truck.text, url: truck["href"]}
+        end
+      end
     end
+
+
     p @trucks
   end
 
