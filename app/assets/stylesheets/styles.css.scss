@@ -65,4 +65,9 @@ ul#shoutout_container {
     border-top: 1px solid $lt-grey;
   }
 }
-
+ul#course-container {
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  overflow: scroll;
+}

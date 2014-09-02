@@ -1,1 +1,7 @@
 <h3>Upcoming at GA</h3>
+
+<ul id="course-container">
+  <% @gaCourses.each do |course| %>
+    <li><a href="<%=  course["url"] %>"><%=  course["title"] %></a><br><span><%= course["date_description"]  %></span></li>
+  <% end %>
+</ul>

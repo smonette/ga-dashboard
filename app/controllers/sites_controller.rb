@@ -1,5 +1,5 @@
 class SitesController < ApplicationController
-  before_action :nokogiri_soups, :nokogiri_trucks
+  before_action :nokogiri_soups, :nokogiri_trucks,:nokogiri_ga
   def index
     @user = User.new
 
@@ -15,16 +15,16 @@ class SitesController < ApplicationController
   end
 
   def nokogiri_trucks
-    urlTrucks = open('http://www.gfoodlounge.com/truckschedule/').read
+    urlTrucks = open('http://www.gfoodlounge.com/#schedule/').read
 
-    # Nokogiri is the module name, HTML is the class name
     pageTrucks = Nokogiri::HTML(urlTrucks)
     @trucks = []
+    # today = Time.now.strftime("%A, %B %d")
 
-    @trucks = pageTrucks.css('.otg-vendor-data a').map do |truck|
-      {title: truck.text, url: truck["href"]}
+    @trucks = pageTrucks.css('li.active a').map do |truck|
+      {title: truck}
     end
-    p @trucks
+
   end
 
   def nokogiri_soups
@@ -44,13 +44,16 @@ class SitesController < ApplicationController
 
   def nokogiri_ga
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
-
-    # Nokogiri is the module name, HTML is the class name
     pageGA = Nokogiri::HTML(urlGA)
-    @ga = []
+    scripts = pageGA.css('script')
+    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n")
 
-    @ga = pageGA.css('.title a').map do |link|
-      {title: link.text, url: link["href"]}
-    end
+
+    # binding.pry
+    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s)
+    @gaCourses = @parsedScript.sort_by{|course| course["starts"] }
+
+      ap @gaCourses[0]["url"]
+
   end
 end
