@@ -8,3 +8,217 @@
   [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140830013727')
   [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140830013921')[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (1.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (22.9ms)[0m  CREATE TABLE "shoutouts" ("id" serial primary key, "content" text, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255), "first_name" character varying(255), "last_name" character varying(255), "password_digest" character varying(255), "code" character varying(255), "expires_at" integer, "created_at" timestamp, "updated_at" timestamp, "image_url" character varying(255)) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140831205653')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140830013727')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140830013921')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sites/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 8.7ms | ActiveRecord: 5.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "hey nice"], ["created_at", "2014-09-02 04:51:37.706467"], ["updated_at", "2014-09-02 04:51:37.706467"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Well done"], ["created_at", "2014-09-02 04:51:37.714722"], ["updated_at", "2014-09-02 04:51:37.714722"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 6.9ms | ActiveRecord: 3.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (3.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:51:37.780679"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$ZlsjKgPdKVFcMHyB7tDuheJ62hw1AqSkSspc71ypjKVDG1dmklUaS"], ["updated_at", "2014-09-02 04:51:37.780679"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "hey nice"], ["created_at", "2014-09-02 04:51:52.974701"], ["updated_at", "2014-09-02 04:51:52.974701"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Well done"], ["created_at", "2014-09-02 04:51:52.982279"], ["updated_at", "2014-09-02 04:51:52.982279"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 7.2ms | ActiveRecord: 3.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:51:53.031958"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$ZtVjMZrJrNYLRg.oGCMHyuGNLYTWV1hyd/RecRrX8n45H0U6kr31O"], ["updated_at", "2014-09-02 04:51:53.031958"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "hey nice"], ["created_at", "2014-09-02 04:54:29.847524"], ["updated_at", "2014-09-02 04:54:29.847524"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Well done"], ["created_at", "2014-09-02 04:54:29.853063"], ["updated_at", "2014-09-02 04:54:29.853063"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 18ms (Views: 7.1ms | ActiveRecord: 3.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:54:29.908515"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$xmAKNJY3p8AMpERwT1NGiuWEBS4uZuDFLPiMjPuD1MRzEmO4WTAVO"], ["updated_at", "2014-09-02 04:54:29.908515"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "hey nice"], ["created_at", "2014-09-02 04:55:16.944268"], ["updated_at", "2014-09-02 04:55:16.944268"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Well done"], ["created_at", "2014-09-02 04:55:16.951470"], ["updated_at", "2014-09-02 04:55:16.951470"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ShoutoutsController#create as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 400 Bad Request in 9ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-02 04:55:17.012347"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$oCdY0X518LiTbl2Cy2C9x.0n/p7Av/MeJUG0fxt2Kodc.bYPQhZ0a"], ["updated_at", "2014-09-02 04:55:17.012347"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ShoutoutsController#create as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 400 Bad Request in 10ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 2.7ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.8ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-09-02 04:56:27.545738"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$V0ZDrdd1sBy2N4WFDmpkrOWadQxecA3hNZ3/hkv6NcKEB.14OPWQ6"], ["updated_at", "2014-09-02 04:56:27.545738"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 7.1ms | ActiveRecord: 6.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:56:43.138891"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$0NFXQ2vDfil5Alr8XsWrOOMG7PGx1AgC9Gvr8XHZIP8Sb2kEUXG56"], ["updated_at", "2014-09-02 04:56:43.138891"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["content", "hey nice"], ["created_at", "2014-09-02 04:56:57.270089"], ["updated_at", "2014-09-02 04:56:57.270089"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "shoutouts" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Well done"], ["created_at", "2014-09-02 04:56:57.277126"], ["updated_at", "2014-09-02 04:56:57.277126"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 3.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:56:57.320978"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$PwfvzwHQAm1BLoTwY.eWb.IoVE0ydCcCdozQyTniM69LDbRLKCUdS"], ["updated_at", "2014-09-02 04:56:57.320978"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered sites/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 7.2ms | ActiveRecord: 5.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'as@bud.com' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", "2014-09-02 04:59:36.571870"], ["email", "as@bud.com"], ["first_name", "Adam"], ["last_name", "Budik"], ["password_digest", "$2a$04$b4.5DdvSUT.MV6eevg7cd.3C1jkzv.jngwZFix8VGmrNS/Kk8pb96"], ["updated_at", "2014-09-02 04:59:36.571870"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'dsfsdafsd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#index as HTML
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
