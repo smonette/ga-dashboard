@@ -1,5 +1,8 @@
 class SitesController < ApplicationController
-  before_action :nokogiri_soups, :nokogiri_trucks,:nokogiri_ga
+before_action :nokogiri_soups, :nokogiri_trucks,:nokogiri_ga
+
+respond_to :html, :json
+  # before_action :nokogiri_soups, :nokogiri_trucks
   def index
     @user = User.new
 
@@ -11,7 +14,8 @@ class SitesController < ApplicationController
 
   end
   def show
-
+    @button1 = @@button1
+    respond_with @button1
   end
 
   def nokogiri_trucks

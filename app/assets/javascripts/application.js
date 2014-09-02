@@ -14,11 +14,38 @@
 //= require jquery_ujs
 //= require_tree .
 $(document).on('page:load ready', function() {
+
+    (function getAJAX(){
+      $.ajax({
+        dataType: 'text',
+        url: '/show.json',
+        success: function(data){
+          $(".bathroom-tile").text("")
+        $(".bathroom-tile").append(data)
+          console.log("SUCCESS")
+          console.log(data)
+        },
+        error: function(data){
+          console.log("ERROR")
+          console.log(data)
+        },
+        complete: function(){
+          // remove the result of the test div
+          setTimeout(getAJAX, 300)
+        } 
+      })
+    })();
+
+      // $.getJSON("/show", function(response){
+      //   alert("This loading?")
+      //   console.log("DONE!")
+      // })
+
+
   $('.new_shoutout').on("submit", function(e) {
     e.preventDefault();
     var content = $('#shoutout_content').val();
     var formURL = $(this).attr('action');
-
     function shoutoutAjax() {
 
       $.ajax({

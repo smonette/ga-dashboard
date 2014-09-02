@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   post "/shoutouts", to: 'shoutouts#create'
 
-  get "/about_us", to: "sites#about"
+  get "/show", to: "sites#show"
   get "/login", to: "sessions#new"
   post "/", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
