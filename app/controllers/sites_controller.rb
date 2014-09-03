@@ -1,19 +1,22 @@
 class SitesController < ApplicationController
-before_action :nokogiri_soups, :nokogiri_trucks,:nokogiri_ga
-
 respond_to :html, :json
+
   # before_action :nokogiri_soups, :nokogiri_trucks
   def index
+    nokogiri_trucks
+    nokogiri_soups 
+    nokogiri_ga
     @user = User.new
 
     @shoutout = Shoutout.new
 
-    @shoutouts_all = Shoutout.all
+    @shoutouts_all = Shoutout.all.order(created_at: :desc)
 
     @current_user = User.find_by_id(session[:id])
 
   end
   def show
+
     @button1 = @@button1
     respond_with @button1
   end
@@ -50,7 +53,7 @@ respond_to :html, :json
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
     pageGA = Nokogiri::HTML(urlGA)
     scripts = pageGA.css('script')
-    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n")
+    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n").take(10)
 
 
     # binding.pry
