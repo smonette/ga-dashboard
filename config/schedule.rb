@@ -19,12 +19,3 @@
 
 # Learn more: http://github.com/javan/whenever
 
-# every 2.hours do
-#   runner "Site.nokogiri_ga", :environment => :development
-# end
-# every 2.hours do
-#   runner "Site.nokogiri_soups", :environment => :development
-# end
-# every 2.hours do
-#   runner "Site.nokogiri_trucks", :environment => :development
-# end

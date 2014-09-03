@@ -5,7 +5,8 @@ respond_to :html, :json
   def index
     nokogiri_trucks
     nokogiri_soups 
-    nokogiri_ga
+
+    @gaCourses = Nokogiriga.all.order(created_at: :asc)
 
     @user = User.new
     @shoutout = Shoutout.new
@@ -53,16 +54,4 @@ respond_to :html, :json
     end
   end
 
-  def nokogiri_ga
-    urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
-    pageGA = Nokogiri::HTML(urlGA)
-    scripts = pageGA.css('script')
-    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n")
-
-
-    # binding.pry
-    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s).take(7)
-    @gaCourses = @parsedScript.sort_by{|course| course["starts"] }
-
-  end
 end
