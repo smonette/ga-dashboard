@@ -53,14 +53,12 @@ respond_to :html, :json
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
     pageGA = Nokogiri::HTML(urlGA)
     scripts = pageGA.css('script')
-    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n").take(10)
+    a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n")
 
 
     # binding.pry
-    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s)
+    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s).take(10)
     @gaCourses = @parsedScript.sort_by{|course| course["starts"] }
-
-      ap @gaCourses[0]["url"]
 
   end
 end

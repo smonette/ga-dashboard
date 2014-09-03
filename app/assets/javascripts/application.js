@@ -46,6 +46,8 @@ $(document).on('page:load ready', function() {
     e.preventDefault();
     var content = $('#shoutout_content').val();
     var formURL = $(this).attr('action');
+    var userName = $('span.username').text();
+
     function shoutoutAjax() {
 
       $.ajax({
@@ -56,7 +58,7 @@ $(document).on('page:load ready', function() {
         success: function(data) {
 
           $('#shoutout_container').prepend(
-            "<li>" + content + " <span class='label label-success'>Saved</span></li>"
+            "<li><strong>" + userName + ": </strong>" + content + " <span class='label label-success'>Saved</span></li>"
             );
             $("#shoutout_content").val("");
         },
