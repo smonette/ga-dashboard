@@ -1,7 +1,13 @@
 <h3 class="shoutout">Shoutouts</h3>
 <ul id="shoutout_container">
   <% @shoutouts_all.each do |shoutout| %>
-    <li><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %></li>
+    <li><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %></li> 
+    <%= form_for @like do |f| %>
+      <%= hidden_field_tag(:parent_id, shoutout.id) %>
+
+      <%= f.submit "Like", class: "btn btn-default" %>
+    <% end %>
+    <%= shoutout.likes.order(created_at: :asc).last.likes %>
 
   <% end %>
 </ul>

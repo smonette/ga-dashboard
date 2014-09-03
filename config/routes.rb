@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'likes/create'
+
   get "/", to: "sites#index", as: 'root'
   get "/about", to: "sites#show"
 
   resources :users
   resources :shoutouts
+
+  resources :likes
 
   post "/shoutouts", to: 'shoutouts#create'
 
