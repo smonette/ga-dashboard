@@ -40,7 +40,7 @@ end
 
 gem 'aws-sdk'
 
-gem 'whenever'
+gem 'rufus-scheduler'
 
 gem 'twitter'
 gem 'twitter-text'
