@@ -7,7 +7,8 @@ respond_to :html, :json
     nokogiri_soups 
     nokogiri_ga
     @user = User.new
-
+    @GA_SF = TWITTER_CLIENT.user_timeline('GA_SF')
+    @foodtruck = TWITTER_CLIENT.user_timeline('gloungesf')
     @shoutout = Shoutout.new
 
     @shoutouts_all = Shoutout.all.order(created_at: :desc)
