@@ -1,4 +1,4 @@
-<h3>Shoutouts</h3>
+<h3 class="shoutout">Shoutouts</h3>
 <ul id="shoutout_container">
   <% @shoutouts_all.each do |shoutout| %>
     <li><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %></li>
@@ -16,7 +16,10 @@
   </div>
 <% end %>
 <% else %>
-  <h5><a data-toggle="modal" data-target="#signupModal" href="">SIGN UP</a> or <a data-toggle="modal" data-target="#loginModal" href="">LOG IN</a> to leave shoutouts!</h5>
+  <div class="text-center shout-hold">
+    <h4>Want to leave a shoutout?</h4>
+    <p><a data-toggle="modal" data-target="#signupModal" href="">SIGN UP</a> or <a data-toggle="modal" data-target="#loginModal" href="">LOG IN</a> now!</p>
+  </div>
 <% end %>
 
 
