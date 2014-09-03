@@ -13,7 +13,7 @@
               Signup
             </button>
           <% else %>
-            <h3>Welcome, <%= @current_user.first_name %>!</h3>
+            <h3>Welcome, <span class="username"><%= @current_user.first_name %></span>!</h3>
             <br>
             <a href="users/<%= @current_user.id %>/edit"><button class="btn btn-primary btn-md">Account Settings</button></a>
           <% end %>
