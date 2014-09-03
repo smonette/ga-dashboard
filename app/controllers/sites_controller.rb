@@ -47,10 +47,7 @@ respond_to :html, :json
     @soups = []
 
     @soups = pageSoups.css('a.soupSelection').map do |soup|
-      # @images = pageSoups.css('a.soupSelection img').each do |img|
-      #   img['src']
-      # end
-     {name: soup.text.strip, img: @images }
+     {name: soup.text.strip }
     end
   end
 

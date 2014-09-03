@@ -1,4 +1,4 @@
-.galogo {
+/*.galogo {
   width: 40px;
   height: 100px;
   background-image: url('general-assembly.png');
@@ -9,17 +9,18 @@
 }
 .tweet {
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #ccc;
+  border-bottom: none;
   float: right;
-}
-.twittericon {
+}*/
+/*.twittericon {
   background-image: url('twittericon.png');
   background-repeat: no-repeat;
   height: 50px;
   background-size: 40px;
-}
+}*/
 
-.truckbox {
+/*.truckbox {
   height: 155px;
   border-top: 1px solid grey;
   padding: 0px;
@@ -65,4 +66,4 @@
   font-size: 11px;
   position: relative;
   top: -5px;
-}
+}*/

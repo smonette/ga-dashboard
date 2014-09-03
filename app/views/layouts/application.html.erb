@@ -40,6 +40,9 @@
                 Login
               </button>
             <% else %>
+              <p>Welcome, <span class="username"><%= @current_user.first_name %></span>!</p>
+              <br>
+              <a href="users/<%= @current_user.id %>/edit"><button class="btn btn-primary btn-md">Account Settings</button></a>
               <a href="/logout" class="btn btn-default btn-sm right">
                 Logout
               </a>
