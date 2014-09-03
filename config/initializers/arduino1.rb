@@ -3,6 +3,7 @@
 # x = true
 # z = true
 
+# @@button.up do      
 #   @@button1 = "The button is down"
 #   puts @button1
 #   puts z = false
