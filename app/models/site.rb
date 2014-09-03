@@ -1,10 +1,10 @@
 class Site < ActiveRecord::Base
 
   def self.do_something
-    Nokogiriga.destroy_all
+    Workshop.destroy_all
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
     pageGA = Nokogiri::HTML(urlGA)
-        
+
     scripts = pageGA.css('script')
     a = scripts.select {|s| s.text.include? "EDUCATIONAL_OFFERINGS_JSON"}.first.content.split("\n")
 
@@ -16,7 +16,7 @@ class Site < ActiveRecord::Base
 
 
     @gaCourses.each do |course|
-      Nokogiriga.create(url: course["url"], title: course["title"], date: course["date_description"])
+      Workshop.create(url: course["url"], title: course["title"], date: course["date_description"])
     end
   end
 end

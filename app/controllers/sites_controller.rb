@@ -4,9 +4,9 @@ respond_to :html, :json
   # before_action :nokogiri_soups, :nokogiri_trucks
   def index
     nokogiri_trucks
-    nokogiri_soups 
+    nokogiri_soups
 
-    @gaCourses = Nokogiriga.all.order(created_at: :asc)
+    @gaCourses = Workshop.all.order(created_at: :asc)
 
     @user = User.new
     @shoutout = Shoutout.new
