@@ -11,10 +11,28 @@ $black: #0D0D0D;
 
 $box-height: 270px;
 
+$border: 1px solid #ccc;
+
+@mixin container($height) {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: $height;
+}
+
+@mixin logo($width){
+  background-size: $width 24px;
+   height: 24px;
+   width: $width;
+   display: inline-block;
+  margin-right: 10px;
+}
+
 
 body {
   background: url('dark_fish_skin.png') 0 0 repeat;
   font-family: 'Lato', sans-serif;
+  color: $black;
 }
 
 .header{
@@ -30,7 +48,7 @@ body {
   padding: 20px 0;
   text-align: center;
   color: $white;
-  span{ padding: 0 15px;}
+  span{ padding: 0 15px; }
 }
 .box {
   background-color: $white;
@@ -41,18 +59,33 @@ body {
   -webkit-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
 
   &.tall { height: ($box-height * 2) + 40; }
-
-  h3 { margin-top: 0; }
+  h2.welcome {
+    margin: 0 0 15px 0;
+  }
+  h3 {
+    margin: 0 0 10px 0;
+    padding: 0 0px 15px 35px;
+    border-bottom: $border;
+    a {
+      color: $black;
+      &:hover { color: $red;}
+    }
+    &.shoutout{
+      text-align: center;
+      padding-left: 0;
+    }
+  }
 
 }
+
+/* shoutout */
+
 ul#shoutout_container {
-  padding: 0;
-  margin: 0;
-  height: 400px;
+  @include container(400px);
   margin-bottom: 20px;
-  overflow: scroll;
 
   span {
     letter-spacing: 1px;
@@ -61,13 +94,50 @@ ul#shoutout_container {
 
   li {
     list-style: none;
-    padding: 15px 0;
-    border-top: 1px solid $lt-grey;
+    padding: 10px 0;
   }
 }
+.shout-hold{
+  border-top: $border;
+  padding: 15px 0;
+}
+
+/* courses */
+
+h3.ga span{
+   background: url('GAlogo.png') 0 0 no-repeat;
+  @include logo(24px);
+}
 ul#course-container {
-  padding: 0;
-  margin: 0;
-  height: 200px;
-  overflow: scroll;
+  @include container(155px);
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+/* bart */
+h3.bart span {
+   background: url('bartlogo.png') 0 0 no-repeat;
+   @include logo(37px);
+}
+
+.see-all {
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  border-top: $border;
+  padding-top: 10px;
+}
+
+/* soup */
+h3.soup span {
+  background: url('specialtys.png') 0 0 no-repeat;
+   @include logo(24px);
+}
+
+/* soup */
+h3.trucks span {
+  background: url('trucklogo.jpg') 0 0 no-repeat;
+  @include logo(24px);
 }
