@@ -8,7 +8,10 @@ class ShoutoutsController < ApplicationController
 
     if new_shoutout.save
       @shoutouts = user.shoutouts << new_shoutout
+
       render :json => @shoutouts
+      new_like = Like.create(likes: 0)
+      new_shoutout.likes << new_like
     else
       redirect_to '/'
     end

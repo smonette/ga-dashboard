@@ -6,10 +6,13 @@ respond_to :html, :json
     nokogiri_trucks
     nokogiri_soups 
     nokogiri_ga
+
     @user = User.new
+    @shoutout = Shoutout.new
+    @like = Like.new
+
     @GA_SF = TWITTER_CLIENT.user_timeline('GA_SF')
     @foodtruck = TWITTER_CLIENT.user_timeline('gloungesf')
-    @shoutout = Shoutout.new
 
     @shoutouts_all = Shoutout.all.order(created_at: :desc)
 
@@ -58,7 +61,7 @@ respond_to :html, :json
 
 
     # binding.pry
-    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s).take(10)
+    @parsedScript = JSON.parse(a[1].match(/\[[^;]*/).to_s).take(7)
     @gaCourses = @parsedScript.sort_by{|course| course["starts"] }
 
   end

@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140831205653) do
+ActiveRecord::Schema.define(version: 20140903053540) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "likes", force: true do |t|
+    t.integer  "likes"
+    t.integer  "user_likes_id"
+    t.integer  "shoutout_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "shoutouts", force: true do |t|
     t.text     "content"

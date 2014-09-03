@@ -40,6 +40,8 @@ end
 
 gem 'aws-sdk'
 
+gem 'whenever'
+
 gem 'twitter'
 gem 'twitter-text'
 

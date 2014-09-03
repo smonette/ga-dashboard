@@ -31,7 +31,7 @@ $(document).on('page:load ready', function() {
         },
         complete: function(){
           // remove the result of the test div
-          setTimeout(getAJAX, 300)
+          setTimeout(getAJAX, 2000)
         } 
       })
     })();
