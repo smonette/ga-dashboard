@@ -32,7 +32,7 @@ $(document).on('page:load ready', function() {
         complete: function(){
           // remove the result of the test div
           setTimeout(getAJAX, 1222000)
-        } 
+        }
       })
     })();
 
@@ -46,7 +46,7 @@ $(document).on('page:load ready', function() {
     e.preventDefault();
     var content = $('#shoutout_content').val();
     var formURL = $(this).attr('action');
-    var userName = $('span.username').text();
+    var userName = $('h4 a.username').text();
 
     function shoutoutAjax() {
 
@@ -71,4 +71,25 @@ $(document).on('page:load ready', function() {
     shoutoutAjax();
 
   });
+
+
+  // Get on screen image
+  var screenImage = $("#image");
+
+  // Create new offscreen image to test
+  var theImage = new Image();
+  theImage.src = screenImage.attr("src");
+
+  // Get accurate measurements from that.
+  var imageWidth = theImage.width;
+  var imageHeight = theImage.height;
+
+  if (imageWidth > imageHeight) {
+    $('.profile-pic').addClass('landscape')
+  } else if (imageHeight > imageWidth) {
+    $('.profile-pic').addClass('portrait')
+  } else {
+    $('.profile-pic').css("width", "100%")
+  }
+
 })

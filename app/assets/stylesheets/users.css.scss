@@ -1,0 +1,39 @@
+$border: 1px solid #ccc;
+
+.edit-form,
+.show-user,
+.show-all {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  margin-top: 10px;
+  box-shadow: .5px .5px 4px #191919;
+}
+.show-user .pic-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.show-all .pic-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.profile-pic.landscape {
+  height: 100%;
+  margin-left: -25%;
+}
+.profile-pic.portrait {
+  width: 100%;
+  margin-top: -10%;
+}
+.show-all .user-box{
+    border: $border;
+    padding: 20px;
+    text-align: center;
+    margin: 0 5px;
+}

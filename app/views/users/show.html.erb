@@ -1,16 +1,16 @@
-<style>
-.showuser {
-  color: white;
-}
-.profilepic {
-  height: 100px;
-  display: inline-block;
-}
-</style>
+<div class="col-sm-8 col-sm-offset-2">
 
-<div class="showuser">
-  <img class="profilepic" src="<%= @user.image_url %>"><br>
-  <%= @user.first_name %>
-  <%= @user.last_name %><br>
-  <%= @user.email %>
+  <div class="show-user row">
+    <div class="col-sm-4">
+      <div class="pic-container">
+        <img class="profile-pic" id="image" src="<%= @user.image_url %>">
+      </div>
+      <h2><%= @user.first_name %> <%= @user.last_name %></h2>
+      <a href="mailto:<%= @user.email %>"><%= @user.email %></a>
+    </div>
+    <div class="col-sm-8">
+      <%= render partial: "shoutouts/show" %>
+    </div>
+  </div>
+
 </div>

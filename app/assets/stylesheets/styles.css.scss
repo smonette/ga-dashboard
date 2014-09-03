@@ -81,7 +81,11 @@ body {
   }
 
 }
-
+.divider{
+  border-top: $border;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
 /* shoutout */
 
 ul#shoutout_container {
@@ -106,11 +110,11 @@ ul#shoutout_container {
 /* courses */
 
 h3.ga span{
-   background: url('GAlogo.png') 0 0 no-repeat;
+   background-image: url('general-assembly.png');
   @include logo(24px);
 }
 ul#course-container {
-  @include container(155px);
+  @include container(150px);
 
   li {
     padding: 5px 0;
