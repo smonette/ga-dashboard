@@ -20,7 +20,7 @@
 }
 
 .truckbox {
-  height: 200px;
+  height: 155px;
   border-top: 1px solid grey;
   padding: 0px;
   overflow: scroll;
@@ -37,15 +37,13 @@
 
 .tweetbox {
   margin-top: 10px;
-  height: 485px;
+  height: 465px;
   overflow: scroll;
   border-top: 1px solid grey;
   padding: 0px;
-  border-radius: 4px;
 }
 .gabox {
   border-bottom: 1px solid grey;
-  border-radius: 4px;
 }
 
 .gabox a {
