@@ -7,7 +7,7 @@ respond_to :html, :json
     nokogiri_soups
     xml_bart
 
-    # @gaCourses = Workshop.all.order(created_at: :asc)
+    @gaCourses = Workshop.all.order(created_at: :asc)
 
     @user = User.new
     @shoutout = Shoutout.new
