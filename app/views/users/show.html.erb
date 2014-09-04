@@ -3,7 +3,7 @@
   <div class="show-user row">
     <div class="col-sm-4">
       <div class="pic-container">
-        <img class="profile-pic" id="image" src="<%= @user.image_url %>">
+        <img class="profile-pic" src="<%= @user.image_url %>">
       </div>
       <h2><%= @user.first_name %> <%= @user.last_name %></h2>
       <a href="mailto:<%= @user.email %>"><%= @user.email %></a>

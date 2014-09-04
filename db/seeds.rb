@@ -41,12 +41,3 @@ anil = User.create({first_name: "Ani",
         last_name: "Brigpal", email: "anil@mail.com",
         password: "12341234", password_confirmation: "12341234",
         image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
-
-
-Shoutout.create({content: "Anil, thanks for JSON help", user_id: "1"})
-Shoutout.create({content: "Great job, Adam!", user_id: "1"})
-Shoutout.create({content: "Good work today, Tim", user_id: "5"})
-Shoutout.create({content: "Way to go class!", user_id: "4"})
-Shoutout.create({content: "The arduino looks great, Austin", user_id: "2"})
-Shoutout.create({content: "Del, Thanks for your help.", user_id: "2"})
-Shoutout.create({content: "This cohort rocks", user_id: "3"})

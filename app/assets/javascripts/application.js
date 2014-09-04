@@ -131,18 +131,23 @@ $(document).on('page:load ready', function() {
 
 
 
-  var screenImage = $(".pic-container img");
+    var screenImage = $(".pic-container img");
 
-  var imageWidth = screenImage.width();
-  var imageHeight = screenImage.height();
+      $(screenImage).each(function(key,value){
+
+          var imageWidth = value.clientWidth;
+          var imageHeight = value.clientHeight;
+
+          if (imageWidth > imageHeight) {
+            $(this).addClass('landscape')
+          } else if (imageHeight > imageWidth) {
+            $(this).addClass('portrait')
+          } else {
+            $(this).css("width", "100%")
+          }
+      });
 
 
-  if (imageWidth > imageHeight) {
-    $('.profile-pic').addClass('landscape')
-  } else if (imageHeight > imageWidth) {
-    $('.profile-pic').addClass('portrait')
-  } else {
-    $('.profile-pic').css("width", "100%")
-  }
+
 
 })
