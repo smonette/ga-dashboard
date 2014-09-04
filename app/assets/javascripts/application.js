@@ -137,12 +137,12 @@ $(document).on('page:load ready', function() {
   var imageHeight = screenImage.height();
 
 
-  if (imageWidth === imageHeight) {
-    $('.profile-pic').css("width", "100%")
-  } else if (imageWidth > imageHeight) {
+  if (imageWidth > imageHeight) {
     $('.profile-pic').addClass('landscape')
   } else if (imageHeight > imageWidth) {
     $('.profile-pic').addClass('portrait')
+  } else {
+    $('.profile-pic').css("width", "100%")
   }
 
 })
