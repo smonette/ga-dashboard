@@ -1,10 +1,8 @@
 <h3 class="bart"><span></span>Montgomery Bart</h3>
-<p><%= @current_time %></p>
+<p class="barttime"><%= @current_time %></p>
 <ul class="bart-container">
 <% if @trains != nil %>
-
-<% if @trains['destination'].kind_of?(Array) %>
-
+<% count = 0 %>
   <% @trains.each do |train| %>
 
     <li>
@@ -19,7 +17,8 @@
 
           <% else %>
 
-            <span class="arraytime"><%= timeBart['minutes']  %> min</span>
+            <span class="hashtime<%=count%>"><%= timeBart['minutes']  %> min</span>
+            <% count += 1 %>
 
           <% end %>
 
@@ -29,15 +28,14 @@
 
         <% if train['estimate']['minutes'] != "Leaving" %>
 
-          <span class="hashtime"><%= train['estimate']['minutes'] %> min</span>
+          <span class="hashtime<%=count%>"><%= train['estimate']['minutes'] %> min</span>
+        <% count += 1 %>
 
         <% end %>
 
       <% end %>
 
     </li>
-
-  <% end %>
 
 <% end %>
 <% end %>
