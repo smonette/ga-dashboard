@@ -1,7 +1,6 @@
 class Site < ActiveRecord::Base
 
   def self.do_something
-    # Workshop.destroy_all
 
 
 
@@ -29,7 +28,6 @@ class Site < ActiveRecord::Base
 
 
 
-      # Workshop.create(url: url, title: course["title"], date: course["date_description"])
     end
   end
 end
