@@ -1,4 +1,4 @@
-class Site < ActiveRecord::Base
+class Site
 
   def self.do_something
     Workshop.destroy_all
