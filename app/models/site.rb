@@ -16,7 +16,14 @@ class Site < ActiveRecord::Base
 
 
     @gaCourses.each do |course|
-      Workshop.create(url: course["url"], title: course["title"], date: course["date_description"])
+      url = course["url"]
+      regex = /\.ly(.*)\z/i
+
+      if matched_url = regex.match(url)
+        url = matched_url[1]
+      end
+      
+      Workshop.create(url: url, title: course["title"], date: course["date_description"])
     end
   end
 end

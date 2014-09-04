@@ -15,26 +15,26 @@
 //= require_tree .
 $(document).on('page:load ready', function() {
 
-  (function getAJAX(){
-    $.ajax({
-      dataType: 'text',
-      url: '/show.json',
-      success: function(data){
-        $(".bathroom-tile").text("")
-      $(".bathroom-tile").append(data)
-        console.log("SUCCESS")
-        console.log(data)
-      },
-      error: function(data){
-        console.log("ERROR")
-        console.log(data)
-      },
-      complete: function(){
-        // remove the result of the test div
-        setTimeout(getAJAX, 111000)
-      } 
-    })
-  })();
+//   (function getAJAX(){
+//     $.ajax({
+//       dataType: 'text',
+//       url: '/show.json',
+//       success: function(data){
+//         $(".bathroom-tile").text("")
+//       $(".bathroom-tile").append(data)
+//         console.log("SUCCESS")
+//         console.log(data)
+//       },
+//       error: function(data){
+//         console.log("ERROR")
+//         console.log(data)
+//       },
+//       complete: function(){
+//         // remove the result of the test div
+//         setTimeout(getAJAX, 111000)
+//       } 
+//     })
+//   })();
 
       // $.getJSON("/show", function(response){
       //   alert("This loading?")
@@ -97,23 +97,50 @@ $(document).on('page:load ready', function() {
     })
   }
   likesAjax()
-})
-  // Get on screen image
-  var screenImage = $("#image");
+  })
 
-  // Create new offscreen image to test
-  var theImage = new Image();
-  theImage.src = screenImage.attr("src");
+  function getBart() {
+    $.get('/bart_json.json', {}, function(data) {
+      console.log(data['station']['etd'])
+      stations = data['station']['etd']
+      stations.forEach(function(station) {
+        console.log(station['destination'])
 
-  // Get accurate measurements from that.
-  var imageWidth = theImage.width;
-  var imageHeight = theImage.height;
+        if (station['estimate'] instanceof Array) {
+          station['estimate'].forEach(function(time) {
+            $('.arraytime').text("")
+            $('.arraytime').append(time['minutes'])
+          })
 
-  if (imageWidth > imageHeight) {
-    $('.profile-pic').addClass('landscape')
-  } else if (imageHeight > imageWidth) {
-    $('.profile-pic').addClass('portrait')
-  } else {
-    $('.profile-pic').css("width", "100%")
+        } else {
+          $('.arraytime').text("")
+          $('.arraytime').append(station['estimate']['minutes'])
+        }
+      })
+    })
   }
+  setInterval(getBart, 3000)
+
+
+
+
+
+  // Get on screen image
+  // var screenImage = $("#image");
+
+  // // Create new offscreen image to test
+  // var theImage = new Image();
+  // theImage.src = screenImage.attr("src");
+
+  // // Get accurate measurements from that.
+  // var imageWidth = theImage.width;
+  // var imageHeight = theImage.height;
+
+  // if (imageWidth > imageHeight) {
+  //   $('.profile-pic').addClass('landscape')
+  // } else if (imageHeight > imageWidth) {
+  //   $('.profile-pic').addClass('portrait')
+  // } else {
+  //   $('.profile-pic').css("width", "100%")
+  // }
 })
