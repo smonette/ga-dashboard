@@ -50,7 +50,11 @@ class UsersController < ApplicationController
   end
   def edit
     @user = User.find(params[:id])
-    @current_user = User.find(params[:id])
+    @current_user = User.find(session[:id])
+
+    if @current_user != @user
+      redirect_to '/users'
+    end
   end
 
   def update
