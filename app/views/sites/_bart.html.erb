@@ -7,11 +7,10 @@
       <% train['estimate'].each do |time| %>
         <% if time["minutes"] == "Leaving" %>
 
-        <% else %>
-          <span><%= time["minutes"]  %> min</span>
+          <% else %>
+            <span><%= time["minutes"]  %> min</span>
+          <% end %>
         <% end %>
-
-      <% end %>
     </li>
   <% end %>
 </ul>

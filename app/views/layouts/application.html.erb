@@ -40,10 +40,17 @@
                 Login
               </button>
             <% else %>
-              <span class="right">
-                <h4>Welcome, <a class="username" href="/users/<%= @current_user.id %>"><%= @current_user.first_name %></a>!</h4>
+              <span class="right loggedin">
+              <div>
+                <div class="pic-container">
+                  <img class="profile-pic" id="image" src="<%= @current_user.image_url %>">
+                </div>
+              </div>
+              <div>
+                  <h4>Welcome, <a class="username" href="/users/<%= @current_user.id %>"><%= @current_user.first_name %></a>!</h4>
                 <a href="/users/<%= @current_user.id %>/edit" class="btn btn-default btn-sm">Edit Profile</a>
                 <a href="/logout" class="btn btn-danger btn-sm"> Logout </a>
+              </div>
               </span>
             <% end %>
           </div>

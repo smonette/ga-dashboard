@@ -1,5 +1,12 @@
 $border: 1px solid #ccc;
 
+@mixin icon($size){
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .edit-form,
 .show-user,
 .show-all {
@@ -11,17 +18,14 @@ $border: 1px solid #ccc;
   box-shadow: .5px .5px 4px #191919;
 }
 .show-user .pic-container {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
+   @include icon(200px);
+}
+.loggedin .pic-container {
+  @include icon(60px);
+  margin-right: 15px;
 }
 .show-all .pic-container {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
+  @include icon(100px);
 }
 .profile-pic.landscape {
   height: 100%;
@@ -49,7 +53,7 @@ $border: 1px solid #ccc;
 .likenumber {
   margin-right: 8px;
   position: relative;
-  top: -18px; 
+  top: -18px;
   float: right;
 }
 

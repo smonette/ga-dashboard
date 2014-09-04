@@ -42,7 +42,13 @@ body {
   .right {
     float: right;
     margin: 20px 0 20px 20px;
+    & > div {
+      display: inline-block;
+      vertical-align: top;
+      h4 { margin-top: 0;}
+    }
   }
+
 }
 .footer {
   padding: 20px 0;
