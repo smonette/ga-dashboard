@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   resources :likes
 
+  get "/bart_json(.:format)", to: "sites#json_bart"
+
   post "/shoutouts", to: 'shoutouts#create'
   post "/likes", to: 'likes#create'
 

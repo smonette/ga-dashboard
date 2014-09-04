@@ -23,8 +23,8 @@ respond_to :html, :json
   end
   def show
 
-    @button1 = @@button1
-    respond_with @button1
+    # @button1 = @@button1
+    # respond_with @button1
   end
 
   def nokogiri_trucks
@@ -53,19 +53,20 @@ respond_to :html, :json
   end
 
     def xml_bart
-        xmlfile = open('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=MONT&key=MW9S-E7SL-26DU-VV8V').read
-        @bartTimes = Crack::XML.parse(xmlfile)['root']
-        @trains = []
+      xmlfile = open('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=MONT&key=MW9S-E7SL-26DU-VV8V').read
+      @bartTimes = Crack::XML.parse(xmlfile)['root']
+      @trains = []
+      ap @bartTimes
+      @current_time = @bartTimes["time"]
+      @trains = @bartTimes['station']['etd']
 
-        @current_time = @bartTimes["time"]
-        @trains = @bartTimes['station']['etd']
+  end
 
-        ap @trains
-
-        @trains.map do |departure|
-
-          {destination: departure, }
-        end
+  def json_bart
+    xmlfile = open('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=MONT&key=MW9S-E7SL-26DU-VV8V').read
+    respond_to do |format|
+      format.json { render json: Crack::XML.parse(xmlfile)['root'].to_json }
+    end
   end
 
 end
