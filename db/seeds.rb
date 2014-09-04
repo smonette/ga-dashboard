@@ -9,31 +9,38 @@
 
 steph = User.create({first_name: "Steph",
         last_name: "Money", email: "steph@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 adam = User.create({first_name: "Adam",
         last_name: "Budik", email: "adam@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 austin = User.create({first_name: "Austin",
         last_name: "West", email: "austin@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 tim = User.create({first_name: "Tim",
         last_name: "Licata", email: "tim@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 elie = User.create({first_name: "Elie",
         last_name: "Schoppik", email: "elie@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 del = User.create({first_name: "Del",
         last_name: "Reed", email: "del@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 anil = User.create({first_name: "Ani",
         last_name: "Brigpal", email: "anil@mail.com",
-        password: "12341234", password_confirmation: "12341234"})
+        password: "12341234", password_confirmation: "12341234",
+        image_url:"https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"})
 
 
 Shoutout.create({content: "Anil, thanks for JSON help", user_id: "1"})
