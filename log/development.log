@@ -1,0 +1,363 @@
+  [1m[36mWorkshop Load (2.0ms)[0m  [1mSELECT "workshops".* FROM "workshops"[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 4]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 8]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 10]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (1.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 12]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 14]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 16]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 18]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 20]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.448082"], ["date", "Thu,  4 September"], ["title", "Heart Beats with FuncheapSF"], ["updated_at", "2014-09-04 17:28:17.448082"], ["url", "/education/heart-beats-with-funcheapsf/san-francisco/7469"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.455160"], ["date", "Thu,  4 September"], ["title", "Principles of Crowdfunding Strategy"], ["updated_at", "2014-09-04 17:28:17.455160"], ["url", "/education/principles-of-crowdfunding-strategy/san-francisco/7160"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.457027"], ["date", "Fri,  5 September"], ["title", "Back-end Web Development Course Consultation"], ["updated_at", "2014-09-04 17:28:17.457027"], ["url", "/education/back-end-web-development/san-francisco/learn-more/1472"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.458982"], ["date", "Sat,  6 September"], ["title", "MedHack"], ["updated_at", "2014-09-04 17:28:17.458982"], ["url", "/education/medhack/san-francisco/7711"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.460913"], ["date", "Sat,  6 September"], ["title", "Introduction to HTML & CSS Workshop"], ["updated_at", "2014-09-04 17:28:17.460913"], ["url", "/education/introduction-to-html-css-workshop/san-francisco/7229"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.462509"], ["date", "Sun,  7 September"], ["title", "Build It In a Day Bootcamp"], ["updated_at", "2014-09-04 17:28:17.462509"], ["url", "/education/build-it-in-a-day-bootcamp/san-francisco/7159"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.464013"], ["date", "Sun,  7 September"], ["title", "Data Science: Demystified"], ["updated_at", "2014-09-04 17:28:17.464013"], ["url", "/education/data-science-demystified/san-francisco/6960"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.465711"], ["date", "Sun,  7 September"], ["title", "Product Management Day"], ["updated_at", "2014-09-04 17:28:17.465711"], ["url", "/education/product-management-day/san-francisco/7494"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.467294"], ["date", "Mon,  8 September"], ["title", "Back-End Web Development"], ["updated_at", "2014-09-04 17:28:17.467294"], ["url", "/education/back-end-web-development/san-francisco"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.468829"], ["date", "Mon,  8 September"], ["title", "Talk Like A Programmer"], ["updated_at", "2014-09-04 17:28:17.468829"], ["url", "/education/talk-like-a-programmer/san-francisco/6491"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.470400"], ["date", "Tue,  9 September"], ["title", "Creative Commons Salon: Public Domain FTW!"], ["updated_at", "2014-09-04 17:28:17.470400"], ["url", "/education/creative-commons-salon-public-domain-ftw/san-francisco/7788"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.472026"], ["date", "Tue,  9 September"], ["title", "Web Development Immersive Info Session"], ["updated_at", "2014-09-04 17:28:17.472026"], ["url", "/education/web-development-immersive/san-francisco/learn-more/1374"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.473715"], ["date", "Tue,  9 September"], ["title", "Introduction to Data Science and Analysis"], ["updated_at", "2014-09-04 17:28:17.473715"], ["url", "/education/introduction-to-data-science-and-analysis/san-francisco/7450"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.475301"], ["date", "Wed, 10 September"], ["title", "Startup Marketing Mixer"], ["updated_at", "2014-09-04 17:28:17.475301"], ["url", "/education/startup-marketing-mixer/san-francisco/7764"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.476943"], ["date", "Wed, 10 September"], ["title", "User Experience Design Info Session"], ["updated_at", "2014-09-04 17:28:17.476943"], ["url", "/education/user-experience-design/san-francisco/learn-more/1067"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.478517"], ["date", "Wed, 10 September"], ["title", "Product Management Info Session"], ["updated_at", "2014-09-04 17:28:17.478517"], ["url", "/education/product-management/san-francisco/learn-more/1446"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.480124"], ["date", "Thu, 11 September"], ["title", "UX Awards"], ["updated_at", "2014-09-04 17:28:17.480124"], ["url", "/education/ux-awards/san-francisco/6950"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.481810"], ["date", "Thu, 11 September"], ["title", "NewCo Happy Hour"], ["updated_at", "2014-09-04 17:28:17.481810"], ["url", "/education/newco-happy-hour/san-francisco/7603"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:28:17.483469"], ["date", "Thu, 11 September"], ["title", "Digital Marketing Chalk Talk"], ["updated_at", "2014-09-04 17:28:17.483469"], ["url", "/education/digital-marketing/san-francisco/learn-more/1473"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:28:17.485128"], ["date", "Sun, 14 September"], ["title", "Agile and Scrum: Dramatically Improving Software Delivery"], ["updated_at", "2014-09-04 17:28:17.485128"], ["url", "/education/agile-and-scrum-dramatically-improving-software-delivery/san-francisco/7423"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:28:20 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.4ms)
+  [1m[35mWorkshop Load (1.3ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (3.3ms)
+  Rendered sites/_twittergasf.html.erb (18.3ms)
+  Rendered sites/_trucks.html.erb (11.9ms)
+  [1m[36mShoutout Load (0.6ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  Rendered shoutouts/_new.html.erb (13.2ms)
+  Rendered sites/_soup.html.erb (0.5ms)
+  Rendered passwords/_new.html.erb (1.0ms)
+  Rendered sites/index.html.erb within layouts/application (60.7ms)
+Completed 200 OK in 1314ms (Views: 156.2ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:28:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:28:53 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered sites/_bathroom.html.erb (0.0ms)
+  [1m[36mWorkshop Load (0.5ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (2.2ms)
+  Rendered sites/_twittergasf.html.erb (16.1ms)
+  Rendered sites/_bart.html.erb (1.5ms)
+  Rendered sites/_trucks.html.erb (12.7ms)
+  [1m[35mShoutout Load (0.5ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  Rendered shoutouts/_new.html.erb (2.5ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered sites/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 1147ms (Views: 50.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:28:54 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:28:55 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:28:55 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:28:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:29:06 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.0ms)
+  [1m[35mWorkshop Load (0.6ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (2.2ms)
+  Rendered sites/_twittergasf.html.erb (25.8ms)
+  Rendered sites/_bart.html.erb (0.7ms)
+  Rendered sites/_trucks.html.erb (11.9ms)
+  [1m[36mShoutout Load (0.5ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  Rendered shoutouts/_new.html.erb (2.4ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered sites/index.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 909ms (Views: 55.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 10:30:07 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 155ms (Views: 0.1ms | ActiveRecord: 0.0ms)
