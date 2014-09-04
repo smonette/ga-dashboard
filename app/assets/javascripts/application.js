@@ -131,7 +131,7 @@ $(document).on('page:load ready', function() {
 
 
 
-  var screenImage = $(".profile-pic");
+  var screenImage = $(".pic-container img");
 
   var imageWidth = screenImage.width();
   var imageHeight = screenImage.height();
