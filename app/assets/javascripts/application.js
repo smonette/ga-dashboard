@@ -131,20 +131,20 @@ $(document).on('page:load ready', function() {
 
 
 
-  // var screenImage = $("#image");
+  var screenImage = $("#image");
 
-  // var theImage = new Image();
-  // theImage.src = screenImage.attr("src");
+  var theImage = new Image();
+  theImage.src = screenImage.attr("src");
 
-  // var imageWidth = theImage.width;
-  // var imageHeight = theImage.height;
+  var imageWidth = theImage.width;
+  var imageHeight = theImage.height;
 
-  // if (imageWidth > imageHeight) {
-  //   $('.profile-pic').addClass('landscape')
-  // } else if (imageHeight > imageWidth) {
-  //   $('.profile-pic').addClass('portrait')
-  // } else {
-  //   $('.profile-pic').css("width", "100%")
-  // }
+  if (imageWidth > imageHeight) {
+    $('.profile-pic').addClass('landscape')
+  } else if (imageHeight > imageWidth) {
+    $('.profile-pic').addClass('portrait')
+  } else {
+    $('.profile-pic').css("width", "100%")
+  }
 
 })
