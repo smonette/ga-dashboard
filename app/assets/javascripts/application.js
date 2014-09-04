@@ -15,26 +15,26 @@
 //= require_tree .
 $(document).on('page:load ready', function() {
 
-    (function getAJAX(){
-      $.ajax({
-        dataType: 'text',
-        url: '/show.json',
-        success: function(data){
-          $(".bathroom-tile").text("")
-        $(".bathroom-tile").append(data)
-          console.log("SUCCESS")
-          console.log(data)
-        },
-        error: function(data){
-          console.log("ERROR")
-          console.log(data)
-        },
-        complete: function(){
-          // remove the result of the test div
-          setTimeout(getAJAX, 1222000)
-        }
-      })
-    })();
+  (function getAJAX(){
+    $.ajax({
+      dataType: 'text',
+      url: '/show.json',
+      success: function(data){
+        $(".bathroom-tile").text("")
+      $(".bathroom-tile").append(data)
+        console.log("SUCCESS")
+        console.log(data)
+      },
+      error: function(data){
+        console.log("ERROR")
+        console.log(data)
+      },
+      complete: function(){
+        // remove the result of the test div
+        setTimeout(getAJAX, 111000)
+      } 
+    })
+  })();
 
       // $.getJSON("/show", function(response){
       //   alert("This loading?")
@@ -69,10 +69,35 @@ $(document).on('page:load ready', function() {
       });
     }
     shoutoutAjax();
+  })
 
-  });
+  $('.new_like').on("submit", function(e) {
+  // alert("before prevent")
+  e.preventDefault();
 
-
+  var shoutout_count = $(this).attr("data-shoutout-id")
+  var likes_id = $(this).attr("data-like-id")
+  // console.log("likes", likes)
+  var likesURL = $(this).attr('action');
+  function likesAjax() {
+    $.ajax({
+      dataType: "json",
+      url: likesURL,
+      type: 'POST',
+      data: {"parent_id": shoutout_count},
+      success: function(data) {
+        console.log(data)
+        console.log(likes_id)
+        console.log($('span.likes' + likes_id))
+        // console.log("data", data)
+        // console.log("new_like", new_like)
+        $('span.likes' + likes_id).text("")
+        $('span.likes' + likes_id).append(data);
+      }
+    })
+  }
+  likesAjax()
+})
   // Get on screen image
   var screenImage = $("#image");
 
@@ -91,5 +116,4 @@ $(document).on('page:load ready', function() {
   } else {
     $('.profile-pic').css("width", "100%")
   }
-
 })

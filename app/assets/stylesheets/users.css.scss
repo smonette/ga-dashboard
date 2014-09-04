@@ -37,3 +37,22 @@ $border: 1px solid #ccc;
     text-align: center;
     margin: 0 5px;
 }
+
+.like-button {
+  height: 22px;
+  width: 22px;
+  float: right;
+  position: relative;
+  top: -19px
+}
+
+.likenumber {
+  margin-right: 8px;
+  position: relative;
+  top: -18px; 
+  float: right;
+}
+
+.singleshout {
+  border-bottom: 1px solid #e4e4e4;
+}

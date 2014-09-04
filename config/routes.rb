@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'likes/create'
 
   get "/", to: "sites#index", as: 'root'
   get "/about", to: "sites#show"
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
   resources :likes
 
   post "/shoutouts", to: 'shoutouts#create'
+  post "/likes", to: 'likes#create'
 
   get "/show", to: "sites#show"
   get "/login", to: "sessions#new"

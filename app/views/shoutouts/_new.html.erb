@@ -1,15 +1,18 @@
 <h3 class="header-center">Shoutouts</h3>
 <ul id="shoutout_container">
-  <% @shoutouts_all.each do |shoutout| %>
-    <li><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %></li>
-    <%= form_for @like do |f| %>
-      <%= hidden_field_tag(:parent_id, shoutout.id) %>
 
-      <%= f.submit "Like", class: "btn btn-default" %>
+<div class="shouttext">
+  <% @shoutouts_all.each do |shoutout, i| %>
+    <li class="singleshout"><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %>
+    <%= form_for @like, :html => { :"data-shoutout-id" => shoutout.id, :"data-like-id" => shoutout.likes.order(created_at: :asc).last.id } do |f| %>
+
+      <%= f.submit "Like", :type => :image, :src => "http://www.mricons.com/store/png/117103_34617_128_favorite_star_icon.png", class: "like-button" %>
+        <span class="likenumber likes<%= shoutout.likes.order(created_at: :asc).last.id %> "><%= shoutout.likes.order(created_at: :asc).last.likes %></span>
     <% end %>
-    <%= shoutout.likes.order(created_at: :asc).last.likes %>
 
   <% end %>
+  </li> 
+  </div>
 </ul>
 
 <% if session[:id] != nil %>
