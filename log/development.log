@@ -361,3 +361,3549 @@ Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:29:07 -0700
 Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 10:30:07 -0700
 Processing by SitesController#json_bart as JSON
 Completed 200 OK in 155ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[36mWorkshop Load (1.1ms)[0m  [1mSELECT "workshops".* FROM "workshops"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 401]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 402]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 403]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 404]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 405]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 406]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 407]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 408]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 409]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 410]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 411]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 412]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 413]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 414]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 415]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 416]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 417]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 418]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 419]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 420]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.541549"], ["date", "Thu,  4 September"], ["title", "Principles of Crowdfunding Strategy"], ["updated_at", "2014-09-04 17:56:27.541549"], ["url", "/education/principles-of-crowdfunding-strategy/san-francisco/7160"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.544754"], ["date", "Thu,  4 September"], ["title", "Heart Beats with FuncheapSF"], ["updated_at", "2014-09-04 17:56:27.544754"], ["url", "/education/heart-beats-with-funcheapsf/san-francisco/7469"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.546199"], ["date", "Fri,  5 September"], ["title", "Back-end Web Development Course Consultation"], ["updated_at", "2014-09-04 17:56:27.546199"], ["url", "/education/back-end-web-development/san-francisco/learn-more/1472"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.547856"], ["date", "Sat,  6 September"], ["title", "MedHack"], ["updated_at", "2014-09-04 17:56:27.547856"], ["url", "/education/medhack/san-francisco/7711"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.549323"], ["date", "Sat,  6 September"], ["title", "Introduction to HTML & CSS Workshop"], ["updated_at", "2014-09-04 17:56:27.549323"], ["url", "/education/introduction-to-html-css-workshop/san-francisco/7229"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.550705"], ["date", "Sun,  7 September"], ["title", "Build It In a Day Bootcamp"], ["updated_at", "2014-09-04 17:56:27.550705"], ["url", "/education/build-it-in-a-day-bootcamp/san-francisco/7159"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.552098"], ["date", "Sun,  7 September"], ["title", "Product Management Day"], ["updated_at", "2014-09-04 17:56:27.552098"], ["url", "/education/product-management-day/san-francisco/7494"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.553370"], ["date", "Sun,  7 September"], ["title", "Data Science: Demystified"], ["updated_at", "2014-09-04 17:56:27.553370"], ["url", "/education/data-science-demystified/san-francisco/6960"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.554738"], ["date", "Mon,  8 September"], ["title", "Back-End Web Development"], ["updated_at", "2014-09-04 17:56:27.554738"], ["url", "/education/back-end-web-development/san-francisco"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.556122"], ["date", "Mon,  8 September"], ["title", "Talk Like A Programmer"], ["updated_at", "2014-09-04 17:56:27.556122"], ["url", "/education/talk-like-a-programmer/san-francisco/6491"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.557468"], ["date", "Tue,  9 September"], ["title", "Creative Commons Salon: Public Domain FTW!"], ["updated_at", "2014-09-04 17:56:27.557468"], ["url", "/education/creative-commons-salon-public-domain-ftw/san-francisco/7788"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.558743"], ["date", "Tue,  9 September"], ["title", "Web Development Immersive Info Session"], ["updated_at", "2014-09-04 17:56:27.558743"], ["url", "/education/web-development-immersive/san-francisco/learn-more/1374"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.560016"], ["date", "Tue,  9 September"], ["title", "Introduction to Data Science and Analysis"], ["updated_at", "2014-09-04 17:56:27.560016"], ["url", "/education/introduction-to-data-science-and-analysis/san-francisco/7450"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.561348"], ["date", "Wed, 10 September"], ["title", "Startup Marketing Mixer"], ["updated_at", "2014-09-04 17:56:27.561348"], ["url", "/education/startup-marketing-mixer/san-francisco/7764"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.562738"], ["date", "Wed, 10 September"], ["title", "User Experience Design Info Session"], ["updated_at", "2014-09-04 17:56:27.562738"], ["url", "/education/user-experience-design/san-francisco/learn-more/1067"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.564100"], ["date", "Wed, 10 September"], ["title", "Product Management Info Session"], ["updated_at", "2014-09-04 17:56:27.564100"], ["url", "/education/product-management/san-francisco/learn-more/1446"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.565447"], ["date", "Thu, 11 September"], ["title", "UX Awards"], ["updated_at", "2014-09-04 17:56:27.565447"], ["url", "/education/ux-awards/san-francisco/6950"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.566765"], ["date", "Thu, 11 September"], ["title", "NewCo Happy Hour"], ["updated_at", "2014-09-04 17:56:27.566765"], ["url", "/education/newco-happy-hour/san-francisco/7603"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 17:56:27.568159"], ["date", "Thu, 11 September"], ["title", "Digital Marketing Chalk Talk"], ["updated_at", "2014-09-04 17:56:27.568159"], ["url", "/education/digital-marketing/san-francisco/learn-more/1473"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 17:56:27.569526"], ["date", "Sun, 14 September"], ["title", "Agile and Scrum: Dramatically Improving Software Delivery"], ["updated_at", "2014-09-04 17:56:27.569526"], ["url", "/education/agile-and-scrum-dramatically-improving-software-delivery/san-francisco/7423"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:56:30 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (1.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.6ms)
+  [1m[35mWorkshop Load (1.9ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (5.2ms)
+  Rendered sites/_twittergasf.html.erb (19.4ms)
+  Rendered sites/_bart.html.erb (1.5ms)
+  Rendered sites/_trucks.html.erb (15.1ms)
+  [1m[36mShoutout Load (0.8ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.7ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.8ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (57.2ms)
+  Rendered sites/_soup.html.erb (1.2ms)
+  Rendered passwords/_new.html.erb (3.5ms)
+  Rendered sites/index.html.erb within layouts/application (121.1ms)
+Completed 200 OK in 1825ms (Views: 228.2ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:56:32 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:56:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:57:22 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered sites/_bathroom.html.erb (0.0ms)
+  [1m[36mWorkshop Load (6.5ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (8.4ms)
+  Rendered sites/_twittergasf.html.erb (23.6ms)
+  Rendered sites/_bart.html.erb (1.3ms)
+  Rendered sites/_trucks.html.erb (13.7ms)
+  [1m[35mShoutout Load (0.6ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.5ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.5ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (12.1ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.5ms)
+  Rendered sites/index.html.erb within layouts/application (66.2ms)
+Completed 200 OK in 1210ms (Views: 66.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:57:23 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:57:24 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:57:24 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:57:24 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:57:24 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mShoutout Load (0.3ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shoutouts/_show.html.erb (8.0ms)
+  Rendered users/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:57:25 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mShoutout Load (0.3ms)[0m  SELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1  [["user_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered shoutouts/_show.html.erb (2.5ms)
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:57:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:57:53 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.0ms)
+  [1m[35mWorkshop Load (0.5ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (2.2ms)
+  Rendered sites/_twittergasf.html.erb (13.1ms)
+  Rendered sites/_bart.html.erb (0.6ms)
+  Rendered sites/_trucks.html.erb (11.8ms)
+  [1m[36mShoutout Load (0.5ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (12.0ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.5ms)
+  Rendered sites/index.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 1096ms (Views: 52.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:57:54 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:57:55 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:57:55 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:57:55 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:58:10 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-09-04 10:58:50 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:58:50 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mWorkshop Load (0.5ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (2.1ms)
+  Rendered sites/_twittergasf.html.erb (25.2ms)
+  Rendered sites/_bart.html.erb (0.6ms)
+  Rendered sites/_trucks.html.erb (11.5ms)
+  [1m[35mShoutout Load (0.7ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.4ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (10.1ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered sessions/_new.html.erb (5.2ms)
+  Rendered users/_new.html.erb (3.6ms)
+  Rendered passwords/_new.html.erb (0.6ms)
+  Rendered sites/index.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 1167ms (Views: 78.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:58:51 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:58:52 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:58:52 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:58:52 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:58:52 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:58:52 -0700
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-04 10:59:22 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"first_name"=>"Trish", "last_name"=>"Tiles", "email"=>"trisha@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up!"}
+Unpermitted parameters: first_name, last_name, email, password, password_confirmation
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'trisha@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "image_url", "last_name", "password_digest", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["created_at", "2014-09-04 17:59:22.850253"], ["email", "trisha@gmail.com"], ["first_name", "Trish"], ["image_url", "https://s3-us-west-1.amazonaws.com/gadashboard/profile-1.jpg"], ["last_name", "Tiles"], ["password_digest", "$2a$10$UbAGFIlP36p5iRi7gVw1nOnjP1W.ngT5XZsezR.RiPhPYGD.Yfcdu"], ["updated_at", "2014-09-04 17:59:22.850253"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 10:59:22 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  Rendered sites/_bathroom.html.erb (0.1ms)
+  [1m[36mWorkshop Load (0.6ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (2.2ms)
+  Rendered sites/_twittergasf.html.erb (12.8ms)
+  Rendered sites/_bart.html.erb (0.6ms)
+  Rendered sites/_trucks.html.erb (13.2ms)
+  [1m[35mShoutout Load (0.6ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.3ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (9.4ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered sites/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 1408ms (Views: 50.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 10:59:24 -0700
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:00:24 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 170ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:01:24 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 158ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered users/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+
+Started GET "/users/2/favicon%20path" for 127.0.0.1 at 2014-09-04 11:01:40 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/2/favicon%20path"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:01:46 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered users/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:01:56 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:02:00 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:02:07 -0700
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:03:07 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 152ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:04:07 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 111ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:04:34 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:04:35 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mShoutout Load (0.4ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shoutouts/_show.html.erb (2.9ms)
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:04:37 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 11:04:44 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mShoutout Load (0.5ms)[0m  SELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1  [["user_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered shoutouts/_show.html.erb (3.9ms)
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 76ms (Views: 69.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:04:45 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered users/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:04:54 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 35ms (Views: 16.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:32 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:05:32 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:05:36 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:05:39 -0700
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:06:39 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 156ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:07:39 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 165ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:08:39 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 147ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:14 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 139ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:15 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:09:28 -0700
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mShoutout Load (0.4ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1[0m  [["user_id", 2]]
+  Rendered shoutouts/_show.html.erb (1.2ms)
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:09:30 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mShoutout Load (0.3ms)[0m  SELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1  [["user_id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  Rendered shoutouts/_show.html.erb (9.1ms)
+  Rendered users/show.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:09:34 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:09:36 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:09:37 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:09:41 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 11:10:41 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.0ms)
+  [1m[35mWorkshop Load (1.2ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (10.0ms)
+  Rendered sites/_twittergasf.html.erb (11.4ms)
+  Rendered sites/_bart.html.erb (0.6ms)
+  Rendered sites/_trucks.html.erb (10.0ms)
+  [1m[36mShoutout Load (0.7ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (20.7ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered sites/index.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 2015ms (Views: 59.3ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 11:10:43 -0700
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mWorkshop Load (0.5ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (1.8ms)
+  Rendered sites/_twittergasf.html.erb (11.4ms)
+  Rendered sites/_bart.html.erb (0.5ms)
+  Rendered sites/_trucks.html.erb (9.8ms)
+  [1m[35mShoutout Load (0.5ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.2ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (7.8ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered sessions/_new.html.erb (1.3ms)
+  Rendered users/_new.html.erb (34.1ms)
+  Rendered passwords/_new.html.erb (0.7ms)
+  Rendered sites/index.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 706ms (Views: 107.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 11:10:46 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 11:10:47 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 11:10:47 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 11:10:47 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 11:10:47 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 11:10:47 -0700
+
+
+Started POST "/" for 127.0.0.1 at 2014-09-04 11:11:04 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m1paWjdgjm8QPhbQ7Bhq8LO0LJBle3yk07gsLgLGng=", "user"=>{"email"=>"trisha@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'trisha@gmail.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 11:11:04 -0700
+Processing by SitesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  Rendered sites/_bathroom.html.erb (0.1ms)
+  [1m[36mWorkshop Load (0.7ms)[0m  [1mSELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC[0m
+  Rendered sites/_ga.html.erb (2.3ms)
+  Rendered sites/_twittergasf.html.erb (11.5ms)
+  Rendered sites/_bart.html.erb (0.5ms)
+  Rendered sites/_trucks.html.erb (9.9ms)
+  [1m[35mShoutout Load (0.5ms)[0m  SELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.5ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mLike Load (0.4ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (12.3ms)
+  Rendered sites/_soup.html.erb (0.1ms)
+  Rendered passwords/_new.html.erb (0.4ms)
+  Rendered sites/index.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 1067ms (Views: 48.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 11:11:05 -0700
+
+
+Started POST "/likes" for 127.0.0.1 at 2014-09-04 11:11:09 -0700
+Processing by LikesController#create as JSON
+  Parameters: {"parent_id"=>"31"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mShoutout Load (0.4ms)[0m  SELECT  "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."id" = 31 LIMIT 1
+  [1m[36mLike Load (0.2ms)[0m  [1mSELECT "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1[0m  [["shoutout_id", 31]]
+  [1m[35mLike Load (0.3ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "likes" ("created_at", "likes", "updated_at", "user_likes_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", "2014-09-04 18:11:09.983185"], ["likes", 2], ["updated_at", "2014-09-04 18:11:09.983185"], ["user_likes_id", 2]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "likes" SET "shoutout_id" = $1, "updated_at" = $2 WHERE "likes"."id" = 94[0m  [["shoutout_id", 31], ["updated_at", "2014-09-04 18:11:09.986073"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:11:21 -0700
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-09-04 11:11:23 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mShoutout Load (0.3ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"  WHERE "shoutouts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shoutouts/_show.html.erb (3.2ms)
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 71ms (Views: 65.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:11:24 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:11:25 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{session[:id]}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 8.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:12:08 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:12:11 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:16 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:28 -0700
+
+SyntaxError (/Users/adam/code/ga-dashboard/app/controllers/users_controller.rb:56: syntax error, unexpected ':', expecting keyword_end
+      render: '/users/#{@current_user.id}/edit'
+             ^):
+  app/controllers/users_controller.rb:56: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:37 -0700
+
+SyntaxError (/Users/adam/code/ga-dashboard/app/controllers/users_controller.rb:56: syntax error, unexpected ':', expecting keyword_end
+      render: 'users/#{@current_user.id}/edit'
+             ^):
+  app/controllers/users_controller.rb:56: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:12:57 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:13:00 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:13:01 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:13:05 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/users/#{@current_user.id}/edit
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+  [1m[36mWorkshop Load (0.9ms)[0m  [1mSELECT "workshops".* FROM "workshops"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 421]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 422]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 423]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 424]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 425]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 426]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 427]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 428]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 429]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 430]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 431]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 432]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 433]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 434]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 435]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 436]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 437]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 438]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 439]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 440]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.202105"], ["date", "Thu,  4 September"], ["title", "Principles of Crowdfunding Strategy"], ["updated_at", "2014-09-04 18:13:48.202105"], ["url", "/education/principles-of-crowdfunding-strategy/san-francisco/7160"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.205237"], ["date", "Thu,  4 September"], ["title", "Heart Beats with FuncheapSF"], ["updated_at", "2014-09-04 18:13:48.205237"], ["url", "/education/heart-beats-with-funcheapsf/san-francisco/7469"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.206787"], ["date", "Fri,  5 September"], ["title", "Back-end Web Development Course Consultation"], ["updated_at", "2014-09-04 18:13:48.206787"], ["url", "/education/back-end-web-development/san-francisco/learn-more/1472"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.208201"], ["date", "Sat,  6 September"], ["title", "MedHack"], ["updated_at", "2014-09-04 18:13:48.208201"], ["url", "/education/medhack/san-francisco/7711"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.209579"], ["date", "Sat,  6 September"], ["title", "Introduction to HTML & CSS Workshop"], ["updated_at", "2014-09-04 18:13:48.209579"], ["url", "/education/introduction-to-html-css-workshop/san-francisco/7229"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.210930"], ["date", "Sun,  7 September"], ["title", "Build It In a Day Bootcamp"], ["updated_at", "2014-09-04 18:13:48.210930"], ["url", "/education/build-it-in-a-day-bootcamp/san-francisco/7159"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.212305"], ["date", "Sun,  7 September"], ["title", "Product Management Day"], ["updated_at", "2014-09-04 18:13:48.212305"], ["url", "/education/product-management-day/san-francisco/7494"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.213589"], ["date", "Sun,  7 September"], ["title", "Data Science: Demystified"], ["updated_at", "2014-09-04 18:13:48.213589"], ["url", "/education/data-science-demystified/san-francisco/6960"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.214918"], ["date", "Mon,  8 September"], ["title", "Back-End Web Development"], ["updated_at", "2014-09-04 18:13:48.214918"], ["url", "/education/back-end-web-development/san-francisco"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.216239"], ["date", "Mon,  8 September"], ["title", "Talk Like A Programmer"], ["updated_at", "2014-09-04 18:13:48.216239"], ["url", "/education/talk-like-a-programmer/san-francisco/6491"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.217540"], ["date", "Tue,  9 September"], ["title", "Creative Commons Salon: Public Domain FTW!"], ["updated_at", "2014-09-04 18:13:48.217540"], ["url", "/education/creative-commons-salon-public-domain-ftw/san-francisco/7788"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.218827"], ["date", "Tue,  9 September"], ["title", "Web Development Immersive Info Session"], ["updated_at", "2014-09-04 18:13:48.218827"], ["url", "/education/web-development-immersive/san-francisco/learn-more/1374"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.220245"], ["date", "Tue,  9 September"], ["title", "Introduction to Data Science and Analysis"], ["updated_at", "2014-09-04 18:13:48.220245"], ["url", "/education/introduction-to-data-science-and-analysis/san-francisco/7450"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.221595"], ["date", "Wed, 10 September"], ["title", "Startup Marketing Mixer"], ["updated_at", "2014-09-04 18:13:48.221595"], ["url", "/education/startup-marketing-mixer/san-francisco/7764"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.223006"], ["date", "Wed, 10 September"], ["title", "User Experience Design Info Session"], ["updated_at", "2014-09-04 18:13:48.223006"], ["url", "/education/user-experience-design/san-francisco/learn-more/1067"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.224306"], ["date", "Wed, 10 September"], ["title", "Product Management Info Session"], ["updated_at", "2014-09-04 18:13:48.224306"], ["url", "/education/product-management/san-francisco/learn-more/1446"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.225576"], ["date", "Thu, 11 September"], ["title", "UX Awards"], ["updated_at", "2014-09-04 18:13:48.225576"], ["url", "/education/ux-awards/san-francisco/6950"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.226933"], ["date", "Thu, 11 September"], ["title", "NewCo Happy Hour"], ["updated_at", "2014-09-04 18:13:48.226933"], ["url", "/education/newco-happy-hour/san-francisco/7603"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:13:48.228375"], ["date", "Thu, 11 September"], ["title", "Digital Marketing Chalk Talk"], ["updated_at", "2014-09-04 18:13:48.228375"], ["url", "/education/digital-marketing/san-francisco/learn-more/1473"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:13:48.229694"], ["date", "Sun, 14 September"], ["title", "Agile and Scrum: Dramatically Improving Software Delivery"], ["updated_at", "2014-09-04 18:13:48.229694"], ["url", "/education/agile-and-scrum-dramatically-improving-software-delivery/san-francisco/7423"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[36mWorkshop Load (1.5ms)[0m  [1mSELECT "workshops".* FROM "workshops"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 441]]
+  [1m[35m (5.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 442]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 443]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 444]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 445]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 446]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 447]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 448]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 449]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 450]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 451]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 452]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 453]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 454]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 455]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 456]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 457]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 458]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "workshops" WHERE "workshops"."id" = $1[0m  [["id", 459]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "workshops" WHERE "workshops"."id" = $1  [["id", 460]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.422790"], ["date", "Thu,  4 September"], ["title", "Principles of Crowdfunding Strategy"], ["updated_at", "2014-09-04 18:14:22.422790"], ["url", "/education/principles-of-crowdfunding-strategy/san-francisco/7160"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.427866"], ["date", "Thu,  4 September"], ["title", "Heart Beats with FuncheapSF"], ["updated_at", "2014-09-04 18:14:22.427866"], ["url", "/education/heart-beats-with-funcheapsf/san-francisco/7469"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.429493"], ["date", "Fri,  5 September"], ["title", "Back-end Web Development Course Consultation"], ["updated_at", "2014-09-04 18:14:22.429493"], ["url", "/education/back-end-web-development/san-francisco/learn-more/1472"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.430934"], ["date", "Sat,  6 September"], ["title", "MedHack"], ["updated_at", "2014-09-04 18:14:22.430934"], ["url", "/education/medhack/san-francisco/7711"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.432329"], ["date", "Sat,  6 September"], ["title", "Introduction to HTML & CSS Workshop"], ["updated_at", "2014-09-04 18:14:22.432329"], ["url", "/education/introduction-to-html-css-workshop/san-francisco/7229"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.433692"], ["date", "Sun,  7 September"], ["title", "Build It In a Day Bootcamp"], ["updated_at", "2014-09-04 18:14:22.433692"], ["url", "/education/build-it-in-a-day-bootcamp/san-francisco/7159"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.435021"], ["date", "Sun,  7 September"], ["title", "Product Management Day"], ["updated_at", "2014-09-04 18:14:22.435021"], ["url", "/education/product-management-day/san-francisco/7494"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.436309"], ["date", "Sun,  7 September"], ["title", "Data Science: Demystified"], ["updated_at", "2014-09-04 18:14:22.436309"], ["url", "/education/data-science-demystified/san-francisco/6960"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.437583"], ["date", "Mon,  8 September"], ["title", "Back-End Web Development"], ["updated_at", "2014-09-04 18:14:22.437583"], ["url", "/education/back-end-web-development/san-francisco"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.438912"], ["date", "Mon,  8 September"], ["title", "Talk Like A Programmer"], ["updated_at", "2014-09-04 18:14:22.438912"], ["url", "/education/talk-like-a-programmer/san-francisco/6491"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.440272"], ["date", "Tue,  9 September"], ["title", "Creative Commons Salon: Public Domain FTW!"], ["updated_at", "2014-09-04 18:14:22.440272"], ["url", "/education/creative-commons-salon-public-domain-ftw/san-francisco/7788"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.441590"], ["date", "Tue,  9 September"], ["title", "Web Development Immersive Info Session"], ["updated_at", "2014-09-04 18:14:22.441590"], ["url", "/education/web-development-immersive/san-francisco/learn-more/1374"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.442882"], ["date", "Tue,  9 September"], ["title", "Introduction to Data Science and Analysis"], ["updated_at", "2014-09-04 18:14:22.442882"], ["url", "/education/introduction-to-data-science-and-analysis/san-francisco/7450"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.444173"], ["date", "Wed, 10 September"], ["title", "Startup Marketing Mixer"], ["updated_at", "2014-09-04 18:14:22.444173"], ["url", "/education/startup-marketing-mixer/san-francisco/7764"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.445443"], ["date", "Wed, 10 September"], ["title", "User Experience Design Info Session"], ["updated_at", "2014-09-04 18:14:22.445443"], ["url", "/education/user-experience-design/san-francisco/learn-more/1067"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.446727"], ["date", "Wed, 10 September"], ["title", "Product Management Info Session"], ["updated_at", "2014-09-04 18:14:22.446727"], ["url", "/education/product-management/san-francisco/learn-more/1446"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.448088"], ["date", "Thu, 11 September"], ["title", "UX Awards"], ["updated_at", "2014-09-04 18:14:22.448088"], ["url", "/education/ux-awards/san-francisco/6950"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.449418"], ["date", "Thu, 11 September"], ["title", "NewCo Happy Hour"], ["updated_at", "2014-09-04 18:14:22.449418"], ["url", "/education/newco-happy-hour/san-francisco/7603"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-04 18:14:22.450776"], ["date", "Thu, 11 September"], ["title", "Digital Marketing Chalk Talk"], ["updated_at", "2014-09-04 18:14:22.450776"], ["url", "/education/digital-marketing/san-francisco/learn-more/1473"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "workshops" ("created_at", "date", "title", "updated_at", "url") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-04 18:14:22.452056"], ["date", "Sun, 14 September"], ["title", "Agile and Scrum: Dramatically Improving Software Delivery"], ["updated_at", "2014-09-04 18:14:22.452056"], ["url", "/education/agile-and-scrum-dramatically-improving-software-delivery/san-francisco/7423"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 118ms (Views: 86.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:26 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:14:27 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:14:28 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:28 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:14:29 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:14:32 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `edit_user' for #<UsersController:0x007f99569f5a50>):
+  app/controllers/users_controller.rb:56:in `edit'
+
+
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adam/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:14:54 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 8.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:14:55 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:14:56 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:14:57 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:15:00 -0700
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered users/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:15:08 -0700
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:15:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-04 11:15:43 -0700
+Processing by SitesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered sites/_bathroom.html.erb (0.3ms)
+  [1m[35mWorkshop Load (1.3ms)[0m  SELECT "workshops".* FROM "workshops"   ORDER BY "workshops"."created_at" ASC
+  Rendered sites/_ga.html.erb (9.3ms)
+  Rendered sites/_twittergasf.html.erb (18.2ms)
+  Rendered sites/_bart.html.erb (1.6ms)
+  Rendered sites/_trucks.html.erb (12.2ms)
+  [1m[36mShoutout Load (0.8ms)[0m  [1mSELECT "shoutouts".* FROM "shoutouts"   ORDER BY "shoutouts"."created_at" DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.6ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 31]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 31]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1  [["shoutout_id", 30]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "likes".* FROM "likes"  WHERE "likes"."shoutout_id" = $1  ORDER BY "likes"."created_at" DESC LIMIT 1[0m  [["shoutout_id", 30]]
+  Rendered shoutouts/_new.html.erb (32.9ms)
+  Rendered sites/_soup.html.erb (0.6ms)
+  Rendered passwords/_new.html.erb (1.0ms)
+  Rendered sites/index.html.erb within layouts/application (86.2ms)
+Completed 200 OK in 8667ms (Views: 88.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/assets/likes.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/styles.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/twitter.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/likes.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/passwords.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/shoutouts.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/sites.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/dark_fish_skin.png" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/general-assembly.png" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/twittericon.png" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/bartlogo.png" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/glounge.jpeg" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/trucklogo.jpg" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/assets/specialtys.png" for 127.0.0.1 at 2014-09-04 11:15:52 -0700
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:16:52 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 169ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bart_json.json" for 127.0.0.1 at 2014-09-04 11:17:52 -0700
+Processing by SitesController#json_bart as JSON
+Completed 200 OK in 155ms (Views: 0.2ms | ActiveRecord: 0.0ms)
