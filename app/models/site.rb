@@ -1,7 +1,7 @@
 class Site < ActiveRecord::Base
 
   def self.do_something
-    Workshop.destroy_all
+    # Workshop.destroy_all
     urlGA = open('https://generalassemb.ly/education?where=san-francisco&format=classes-workshops').read
     pageGA = Nokogiri::HTML(urlGA)
 
@@ -22,8 +22,8 @@ class Site < ActiveRecord::Base
       if matched_url = regex.match(url)
         url = matched_url[1]
       end
-      
-      Workshop.create(url: url, title: course["title"], date: course["date_description"])
+
+      # Workshop.create(url: url, title: course["title"], date: course["date_description"])
     end
   end
 end
