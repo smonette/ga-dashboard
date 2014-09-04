@@ -131,7 +131,7 @@ $(document).on('page:load ready', function() {
 
 
 
-  var screenImage = $("#image");
+  var screenImage = $(".profile-pic");
 
   var theImage = new Image();
   theImage.src = screenImage.attr("src");
@@ -139,12 +139,13 @@ $(document).on('page:load ready', function() {
   var imageWidth = theImage.width;
   var imageHeight = theImage.height;
 
-  if (imageWidth > imageHeight) {
+
+  if (imageWidth === imageHeight) {
+    $('.profile-pic').css("width", "100%")
+  } else if (imageWidth > imageHeight) {
     $('.profile-pic').addClass('landscape')
   } else if (imageHeight > imageWidth) {
     $('.profile-pic').addClass('portrait')
-  } else {
-    $('.profile-pic').css("width", "100%")
   }
 
 })
