@@ -65,4 +65,30 @@
   </div>
 
 
+
+
+
+
+
+  <% if session[:id] == nil %>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <%= render partial: "sessions/new"   %>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <%= render partial: "users/new", :locals => {:user => @user} %>
+    </div>
+
+  <% else %>
+
+  <% end %>
+
+  <!-- Modal -->
+
+
+
+
+  <div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <%= render partial: "passwords/new"   %>
+  </div>
 </div>
