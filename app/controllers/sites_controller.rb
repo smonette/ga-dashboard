@@ -5,6 +5,7 @@ respond_to :html, :json
   def index
     nokogiri_trucks
     nokogiri_soups
+    xml_bart
 
     @gaCourses = Workshop.all.order(created_at: :asc)
 
@@ -49,6 +50,22 @@ respond_to :html, :json
     @soups = pageSoups.css('a.soupSelection').map do |soup|
      {name: soup.text.strip }
     end
+  end
+
+    def xml_bart
+        xmlfile = open('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=MONT&key=MW9S-E7SL-26DU-VV8V').read
+        @bartTimes = Crack::XML.parse(xmlfile)['root']
+        @trains = []
+
+        @current_time = @bartTimes["time"]
+        @trains = @bartTimes['station']['etd']
+
+        ap @trains
+
+        @trains.map do |departure|
+
+          {destination: departure, }
+        end
   end
 
 end

@@ -1,1 +1,19 @@
-<h3 class="bart"><span></span>Bart Departures</h3>
+<h3 class="bart"><span></span>Montgomery Bart</h3>
+<p><%= @current_time %></p>
+<ul class="bart-container">
+  <% @trains.each do |train| %>
+    <li>
+      <strong><%= train['destination']  %></strong>
+      <% train['estimate'].each do |time| %>
+        <% if time["minutes"] == "Leaving" %>
+
+        <% else %>
+          <span><%= time["minutes"]  %> min</span>
+        <% end %>
+
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="http://www.bart.gov/stations/mont" class="see-all">See All &raquo;</a>

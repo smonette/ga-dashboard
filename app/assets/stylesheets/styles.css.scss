@@ -136,6 +136,20 @@ h3.bart span {
   padding-top: 10px;
 }
 
+ul.bart-container {
+  @include container(125px);
+  li {
+    list-style: none;
+    padding: 7px 0;
+    span {
+      padding: 0 4px;
+    }
+  }
+  strong {
+    padding-right: 10px;
+  }
+}
+
 
 /* soup */
 h3.soup span {

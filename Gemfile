@@ -48,6 +48,8 @@ gem 'twitter-text'
 gem 'nokogiri'
 gem 'awesome_print'
 
+gem 'crack'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
