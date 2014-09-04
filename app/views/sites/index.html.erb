@@ -13,10 +13,10 @@
               </button>
               <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#signupModal">
                 Signup
-              </button>
+              </button>          
             <% else %>
               <%= render partial: "bathroom" %>
-            <% end %>
+          <% end %>
           </div>
         </div>
         <div class="col-sm-6">
@@ -85,10 +85,4 @@
 
   <!-- Modal -->
 
-
-
-
-  <div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <%= render partial: "passwords/new"   %>
-  </div>
 </div>
