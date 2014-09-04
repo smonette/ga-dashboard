@@ -1,0 +1,485 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+/* Color Scheme */
+/* line 32, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+body {
+  background: url("dark_fish_skin.png") 0 0 repeat;
+  font-family: 'Lato', sans-serif;
+  color: #0d0d0d;
+}
+
+/* line 38, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.header {
+  background-color: #fcfcfc;
+  border-bottom: 10px solid #9d9d9d;
+  margin-bottom: 20px;
+}
+/* line 42, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.header .right {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+/* line 45, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.header .right > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 48, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.header .right > div h4 {
+  margin-top: 0;
+}
+
+/* line 53, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #fcfcfc;
+}
+/* line 57, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.footer span {
+  padding: 0 15px;
+}
+
+/* line 59, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box {
+  background-color: #fcfcfc;
+  height: 270px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 4px 4px 4px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+}
+/* line 70, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box.tall {
+  height: 580px;
+}
+/* line 71, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h2.welcome {
+  margin: 0 0 15px 0;
+}
+/* line 74, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h3 {
+  margin: 0 0 10px 0;
+  padding: 0 0px 15px 35px;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 78, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h3 a {
+  color: #0d0d0d;
+}
+/* line 80, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h3 a:hover {
+  color: #ff1f1f;
+}
+/* line 82, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h3 span {
+  vertical-align: middle;
+}
+/* line 83, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.box h3.header-center {
+  text-align: center;
+  padding-left: 0;
+}
+
+/* line 90, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.divider {
+  border-top: 1px solid #cccccc;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* shoutout */
+/* line 97, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul#shoutout_container {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 400px;
+  margin-bottom: 10px;
+}
+/* line 101, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul#shoutout_container span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/* line 106, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul#shoutout_container li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+/* line 111, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.shout-hold {
+  border-top: 1px solid #cccccc;
+  padding: 15px 0;
+}
+
+/* courses */
+/* line 118, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.ga span {
+  background-image: url("general-assembly.png");
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 122, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul#course-container {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 150px;
+}
+/* line 125, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul#course-container li {
+  padding: 5px 0;
+}
+
+/* bart */
+/* line 132, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.bart span {
+  background: url("bartlogo.png") 0 0 no-repeat;
+  background-size: 37px 24px;
+  height: 24px;
+  width: 37px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 137, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.see-all {
+  margin: 0 auto;
+  display: block;
+  font-size: 16px;
+  border-top: 1px solid #cccccc;
+  padding-top: 10px;
+}
+
+/* line 145, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.bart-container {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 125px;
+}
+/* line 147, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.bart-container li {
+  list-style: none;
+  padding: 7px 0;
+}
+/* line 150, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.bart-container li span {
+  padding: 0 4px;
+}
+/* line 154, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.bart-container strong {
+  padding-right: 10px;
+}
+
+/* soup */
+/* line 161, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.soup span {
+  background: url("specialtys.png") 0 0 no-repeat;
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 165, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.soup-container {
+  margin: 0;
+  padding: 0;
+}
+/* line 168, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+ul.soup-container li {
+  list-style: none;
+  text-align: center;
+  padding: 7px 0 10px 0;
+}
+
+/* twitter and food trucks */
+/* line 178, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.twitter, h3.trucks {
+  border-bottom: none;
+  margin-bottom: 5px;
+}
+
+/* line 182, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.twitter span {
+  background-image: url("twittericon.png");
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 186, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+h3.trucks span {
+  background: url("trucklogo.jpg") 0 0 no-repeat;
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 191, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.galogo {
+  width: 40px;
+  height: 100px;
+  background-image: url("general-assembly.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px;
+}
+
+/* line 200, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.tweet {
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  float: right;
+}
+
+/*.twittericon {
+  background-image: url('twittericon.png');
+  background-repeat: no-repeat;
+  height: 50px;
+  background-size: 40px;
+}*/
+/* line 212, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.truckbox {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 155px;
+}
+
+/* line 215, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.gloungeicon {
+  width: 40px;
+  height: 100px;
+  background-image: url("glounge.jpeg");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px;
+}
+
+/* line 225, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.tweetbox {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  height: 465px;
+}
+
+/* line 228, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.gabox {
+  border: 1px solid #cccccc;
+}
+/* line 230, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.gabox a {
+  color: #b80000;
+  text-decoration: none;
+  list-style-type: none;
+}
+/* line 234, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.gabox a:hover {
+  color: #520000;
+}
+
+/* line 238, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.twittertitle {
+  color: black;
+  margin-right: 5px;
+}
+
+/* line 243, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.handle {
+  color: grey;
+  font-size: 13px;
+}
+
+/* line 247, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/styles.css.scss */
+.time {
+  color: grey;
+  font-size: 11px;
+  position: relative;
+  top: -5px;
+}
+/*.galogo {
+  width: 40px;
+  height: 100px;
+  background-image: url('general-assembly.png');
+  background-size: 40px;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px;
+}
+.tweet {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  float: right;
+}*/
+/*.twittericon {
+  background-image: url('twittericon.png');
+  background-repeat: no-repeat;
+  height: 50px;
+  background-size: 40px;
+}*/
+
+/*.truckbox {
+  height: 155px;
+  border-top: 1px solid grey;
+  padding: 0px;
+  overflow: scroll;
+}
+.gloungeicon {
+  width: 40px;
+  height: 100px;
+  background-image: url('glounge.jpeg');
+  background-size: 40px;
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px;
+}
+
+.tweetbox {
+  margin-top: 10px;
+  height: 465px;
+  overflow: scroll;
+  border-top: 1px solid grey;
+  padding: 0px;
+}
+.gabox {
+  border-bottom: 1px solid grey;
+}
+
+.gabox a {
+  color: brown;
+  text-decoration: none;
+  list-style-type: none;
+}
+.twittertitle {
+  color: black;
+  margin-right: 5px;
+}
+
+.handle {
+  color: grey;
+  font-size: 13px;
+}
+.time {
+  color: grey;
+  font-size: 11px;
+  position: relative;
+  top: -5px;
+}*/
+/* line 12, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.edit-form,
+.show-user,
+.show-all {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  margin-top: 10px;
+  box-shadow: .5px .5px 4px #191919;
+}
+
+/* line 20, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.show-user .pic-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* line 23, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.loggedin .pic-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* line 27, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.show-all .pic-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* line 31, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.pic-container a {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 35, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.profile-pic.landscape {
+  height: 100%;
+  margin-left: -25%;
+}
+
+/* line 39, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.profile-pic.portrait {
+  width: 100%;
+  margin-top: -10%;
+}
+
+/* line 43, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.show-all .user-box {
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 48, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.like-button {
+  height: 22px;
+  width: 22px;
+  float: right;
+  position: relative;
+  top: -19px;
+}
+
+/* line 56, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.likenumber {
+  margin-right: 8px;
+  position: relative;
+  top: -18px;
+  float: right;
+}
+
+/* line 63, /Users/steph/Sites/general-assembly/ga-dashboard/app/assets/stylesheets/users.css.scss */
+.singleshout {
+  border-bottom: 1px solid #e4e4e4;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
