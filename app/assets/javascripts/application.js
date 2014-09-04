@@ -103,23 +103,29 @@ $(document).on('page:load ready', function() {
     $.get('/bart_json.json', {}, function(data) {
       console.log(data['station']['etd'])
       stations = data['station']['etd']
+      $('.barttime').text("")
+      $('.barttime').append(data['time'])
+      count = 0
+
       stations.forEach(function(station) {
         console.log(station['destination'])
 
         if (station['estimate'] instanceof Array) {
           station['estimate'].forEach(function(time) {
-            $('.arraytime').text("")
-            $('.arraytime').append(time['minutes'])
+            $('.hashtime' + count).text("")
+            $('.hashtime' + count).append(time['minutes'] + " min")
+            count += 1
           })
 
         } else {
-          $('.arraytime').text("")
-          $('.arraytime').append(station['estimate']['minutes'])
+          $('.hashtime' + count).text("")
+          $('.hashtime' + count).append(station['estimate']['minutes'] + " min")
+          count += 1
         }
       })
     })
   }
-  setInterval(getBart, 3000)
+  setInterval(getBart, 60000)
 
 
 
