@@ -133,11 +133,8 @@ $(document).on('page:load ready', function() {
 
   var screenImage = $(".profile-pic");
 
-  var theImage = new Image();
-  theImage.src = screenImage.attr("src");
-
-  var imageWidth = theImage.width;
-  var imageHeight = theImage.height;
+  var imageWidth = screenImage.width();
+  var imageHeight = screenImage.height();
 
 
   if (imageWidth === imageHeight) {
