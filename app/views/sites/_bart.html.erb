@@ -5,12 +5,13 @@
     <li>
       <strong><%= train['destination']  %></strong>
       <% train['estimate'].each do |time| %>
-        <% if time["minutes"] == "Leaving" %>
+       <% if time["minutes"].kind_of? String %>
+          <% if time["minutes"] == "Leaving" %>
 
-        <% else %>
-          <span><%= time["minutes"]  %> min</span>
+          <% else %>
+            <span><%= time["minutes"]  %> min</span>
+          <% end %>
         <% end %>
-
       <% end %>
     </li>
   <% end %>
