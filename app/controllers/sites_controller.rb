@@ -16,7 +16,7 @@ respond_to :html, :json
     @GA_SF = TWITTER_CLIENT.user_timeline('GA_SF')
     @foodtruck = TWITTER_CLIENT.user_timeline('gloungesf')
 
-    @shoutouts_all = Shoutout.all.order(created_at: :desc)
+    @shoutouts_all = Shoutout.all.order(created_at: :desc).take(15)
 
     @current_user = User.find_by_id(session[:id])
 

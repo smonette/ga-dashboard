@@ -6,7 +6,6 @@
   <% @trains.each do |train| %>
 
     <li>
-
       <strong><%= train['destination']  %>:</strong>
 
         <% if train['estimate'].kind_of?(Array) %>

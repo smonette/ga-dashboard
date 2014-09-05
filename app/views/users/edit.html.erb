@@ -7,7 +7,7 @@
     <div class="col-sm-7">
       <%= form_for @current_user, url: {controller: 'users', action: "update", id: @current_user.id}, html: {method: "put"} do |f| %>
         <div class="form-group">
-        <%= f.text_field :first_name, value: @current_user.first_name, class: "form-control" %>
+        <%= f.text_field :first_name, value: @current_user.first_name, autofocus: true, class: "form-control" %>
         </div>
         <div class="form-group">
         <%= f.text_field :last_name, value: @current_user.last_name, class: "form-control" %>

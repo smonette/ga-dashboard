@@ -15,6 +15,10 @@ class UsersController < ApplicationController
       :password_confirmation,
       :image_url)
     new_file_path = params[:user].permit(:image_url)
+
+    new_user[:first_name].capitalize!
+    new_user[:last_name].capitalize!
+
     if !new_file_path.blank?
       key = Time.now.to_time.to_i
 
@@ -33,12 +37,14 @@ class UsersController < ApplicationController
       flash[:new_user] = "Message"
       session[:id] = @user.id
       @current_user = User.find_by_id(@user.id)
-      redirect_to '/'
+      redirect_to '/', :notice => "Successfully created an account!"
     else
-      if @user.password != @user.password_confirmation
-        flash[:password_error] = "Message"
-      end
-      redirect_to "/"
+      # if @user.password != @user.password_confirmation
+      #   flash[:password_error] = "Message"
+      # end
+      @errors = @user.errors.full_messages[1]
+
+      redirect_to "/", alert: @errors
     end
   end
 
@@ -46,7 +52,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @current_user = User.find_by_id(session[:id])
     @shoutouts_all = @user.shoutouts
+    @user_shoutouts = 0
 
+    Like.all.each do |like|
+      if like.user_likes_id == @user.id
+        @user_shoutouts += 1
+      end
+    end
   end
   def edit
     @user = User.find(params[:id])
@@ -83,9 +95,9 @@ class UsersController < ApplicationController
     end
 
     if user.update_attributes(updated_params)
-      redirect_to '/'
+      redirect_to '/', :notice => "You have successfully updated your profile"
     else
-      redirect_to edit_user
+      redirect_to '/', :alert => "Something went wrong with your update"
     end
   end
 

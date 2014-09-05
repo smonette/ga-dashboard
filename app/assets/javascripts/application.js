@@ -58,6 +58,8 @@ $(document).on('page:load ready', function() {
         type: 'POST',
         data: {shoutout: {"content": content}},
         success: function(data) {
+          $('.subflash').text('')
+
 
           $('#shoutout_container').prepend(
             "<li><strong>" + userName + ": </strong>" + content + " <span class='label label-success'>Saved</span></li><span class='num'>0</span>"
@@ -65,8 +67,8 @@ $(document).on('page:load ready', function() {
             $("#shoutout_content").val("");
         },
         error: function(error) {
-          console.log("ERROR", error);
-          console.log('CONTENT', content);
+          $('.subflash').text('')
+          $('.shoutoutsub').append('<span class="subflash">must be at least 6 characters</span>')
         }
       });
     }

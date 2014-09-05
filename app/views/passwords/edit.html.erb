@@ -3,7 +3,7 @@
 <%= form_for @user, url: {action: "update", id: @user.id}, html: {method: "put"} do |f| %>
 </div>
 <div class="form-group">
-  <%= f.password_field :password, placeholder: "Enter your password", class: "form-control" %>
+  <%= f.password_field :password, placeholder: "Enter your password", autofocus: true, class: "form-control" %>
 </div>
 <div class="form-group">
   <%= f.password_field :password_confirmation, placeholder: "Confirm your password", class: "form-control" %>

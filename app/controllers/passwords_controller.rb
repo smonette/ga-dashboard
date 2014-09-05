@@ -10,7 +10,7 @@ class PasswordsController < ApplicationController
       user.set_password_reset
       UserMailer.password_reset(user).deliver
     end
-    redirect_to '/', notice: "Email was sent with instructions"
+    redirect_to '/', notice: "E-mail has been sent with instructions"
   end
 
   def update
@@ -20,9 +20,9 @@ class PasswordsController < ApplicationController
       update_password = params.require(:user).permit(:password, :password_confirmation)
       @user.update_attributes(update_password)
       if @user.save
-        redirect_to '/'
+        redirect_to '/', notice: "You have successfully reset your password"
       else
-        redirect_to '/edit'
+        redirect_to '/edit', notice: "Invalid password confirmation"
       end
     end
   end
