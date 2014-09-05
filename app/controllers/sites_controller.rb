@@ -43,8 +43,12 @@ respond_to :html, :json
       xmlfile = open('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=MONT&key=MW9S-E7SL-26DU-VV8V').read
       @bartTimes = Crack::XML.parse(xmlfile)['root']
       @trains = []
-      ap @bartTimes
-      @current_time = @bartTimes["time"]
+      @new_time = []
+
+
+      # @current_time = Time.now.strftime("%B %e, %l:%M %p")
+      @new_time = @bartTimes['time'].split(/:\w+ /)
+      @current_time = "#{@new_time[0]} #{@new_time[1]}"
       @trains = @bartTimes['station']['etd']
 
   end

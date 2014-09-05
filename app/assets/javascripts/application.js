@@ -60,7 +60,7 @@ $(document).on('page:load ready', function() {
         success: function(data) {
 
           $('#shoutout_container').prepend(
-            "<li><strong>" + userName + ": </strong>" + content + " <span class='label label-success'>Saved</span></li>"
+            "<li><strong>" + userName + ": </strong>" + content + " <span class='label label-success'>Saved</span></li><span class='num'>0</span>"
             );
             $("#shoutout_content").val("");
         },
@@ -95,6 +95,12 @@ $(document).on('page:load ready', function() {
         // console.log("new_like", new_like)
         $('span.likes' + likes_id).text("")
         $('span.likes' + likes_id).append(data);
+        $('.like-button' + likes_id).fadeOut(300, function() {
+          $(this).replaceWith('<div class=ajaxalreadybutton></div')
+          $('.like-button' + likes_id).fadeIn("slow");
+        })
+
+
       }
     })
   }
@@ -105,8 +111,11 @@ $(document).on('page:load ready', function() {
     $.get('/bart_json.json', {}, function(data) {
       console.log(data['station']['etd'])
       stations = data['station']['etd']
+      newTime = []
+      newTime = data['time'].split(/:\w+ /)
+
       $('.barttime').text("")
-      $('.barttime').append(data['time'])
+      $('.barttime').append(newTime[0] + " " + newTime[1])
       count = 0
 
       stations.forEach(function(station) {

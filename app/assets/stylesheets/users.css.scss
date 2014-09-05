@@ -45,16 +45,17 @@ $border: 1px solid #ccc;
     text-align: center;
 }
 
-.like-button {
+.likebutton {
   height: 22px;
   width: 22px;
   float: right;
   position: relative;
+  left: -2px;
   top: -19px
 }
 
 .likenumber {
-  margin-right: 8px;
+  margin-left: 8px;
   position: relative;
   top: -18px;
   float: right;
@@ -62,4 +63,34 @@ $border: 1px solid #ccc;
 
 .singleshout {
   border-bottom: 1px solid #e4e4e4;
+}
+
+.alreadybutton {
+  height: 26px;
+  width: 26px;
+  background-image: url('greystar.png');
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  float: right;
+  position: relative;
+  top: -23px;
+}
+
+.ajaxalreadybutton {
+  height: 26px;
+  width: 26px;
+  background-image: url('greystar.png');
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  float: right;
+  position: relative;
+  top: -23px;
+}
+
+.num {
+  float: right;
+  position: relative;
+  top: -28px;
 }
