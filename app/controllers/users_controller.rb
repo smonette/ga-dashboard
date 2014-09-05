@@ -81,6 +81,9 @@ class UsersController < ApplicationController
       :image_url)
     new_file_path = params[:user].permit(:image_url)
 
+    updated_params[:first_name].capitalize!
+    updated_params[:last_name].capitalize!
+
     if !new_file_path.blank?
       key = Time.now.to_time.to_i
 
