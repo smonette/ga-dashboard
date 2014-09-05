@@ -63,6 +63,9 @@ class UsersController < ApplicationController
       :first_name,
       :last_name,
       :email,
+      :summary,
+      :website_one,
+      :website_two,
       :image_url)
     new_file_path = params[:user].permit(:image_url)
 

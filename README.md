@@ -3,17 +3,22 @@
 ===========
 
 ## Description
-Our project provides GA students and staff with an overview of the happening around 501 Folsom. 
+Tired of checking Twitter to see the food trucks? Not sure if you should take your hoodie to run an errand? Fret no more—GA Dashboard is here! Our project is your single stop to learn about all the happenings around 501 Folsom, and the FiDi neighborhood.
+
 
 A guest user is able to see neighborhood food specials, Bart departure times, and the shoutouts wall. As a guest, the experiece is only informational.
 
-By creating an account a user is able to see contact information for other students, add shoutouts to the wall, and check the vacancy of our bathrooms. 
+By creating an account a user is able to create a profile, see contact information for other members, and add shoutouts to the wall.
 
 [Preview on Heroku](http://ga-dashboard.herokuapp.com/)
 
-## APIs Used
+## APIs and Gems Used
 - S3
 - Nokogiri
+- Open Weather Map
+- BART
+- Twitter
+
 
 ## Wireframes
 ## MVP
@@ -31,7 +36,7 @@ By creating an account a user is able to see contact information for other stude
 	* Profile info (login/edit profile)
 	* Recent @GA_SF tweets
 - Guest users should have access to some tiles, but cannot contribute
-- Logged in users should have access to other students profiles, and should be able to post a shout out 
+- Logged in users should have access to other students profiles, and should be able to post a shout out
 
 
 ## Wishlist

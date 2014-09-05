@@ -9,7 +9,8 @@ $border: 1px solid #ccc;
 
 .edit-form,
 .show-user,
-.show-all {
+.show-all,
+.about-us {
   margin-top: 30px;
   background-color: white;
   padding: 20px;
@@ -27,6 +28,10 @@ $border: 1px solid #ccc;
 .show-all .pic-container {
   @include icon(100px);
   margin: 0 auto;
+}
+.user-center .pic-container {
+  @include icon(40px);
+  float: left;
 }
 .pic-container a {
   width: 100%;
