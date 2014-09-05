@@ -13,7 +13,7 @@ class ShoutoutsController < ApplicationController
       new_like = Like.create(likes: 0)
       new_shoutout.likes << new_like
     else
-      redirect_to '/'
+      render :json => "Shout outs must be at least 6 characters"
     end
 
   end

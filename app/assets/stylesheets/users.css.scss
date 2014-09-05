@@ -99,3 +99,46 @@ $border: 1px solid #ccc;
   position: relative;
   top: -28px;
 }
+.userstar {
+  width: 40px;
+  height: 40px;
+  float: right;
+  position: relative;
+  top: -472px;
+  left: 5px;
+  background-image: url('star.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+#notice {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  color: #32cd32;
+  float: left;
+  
+}
+#alert {
+  font-size: 16px;
+  float: left;
+  position: relative;
+  color: red;
+}
+.subflash {
+  position: relative;
+  top: 8px;
+  color: #ff4c4c;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px black;
+}
+.flashusers {
+  margin-top: 20px;
+}
+.usershoutouts {
+  float: right;
+  position: relative;
+  top: -470px;
+  font-size: 20px;
+  font-weight: bold;
+}

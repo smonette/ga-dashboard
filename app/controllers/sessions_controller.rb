@@ -8,15 +8,14 @@ class SessionsController < ApplicationController
 
     if @user
       session[:id] = @user.id
-      redirect_to '/', notice: "you're logged in"
+      redirect_to '/', notice: "You have logged in!"
     else
-      flash.now[:error] = "Something went wrong"
-      redirect_to '/'
+      redirect_to '/', notice: "Invalid email or password"
     end
   end
 
   def destroy
     session[:id] = nil
-    redirect_to '/', notice: "you're logged out"
+    redirect_to '/', notice: "You've been logged out"
   end
 end

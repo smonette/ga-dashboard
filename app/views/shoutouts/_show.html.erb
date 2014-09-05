@@ -4,5 +4,7 @@
     <li><strong><%= User.find_by_id(shoutout.user_id).first_name %>:</strong> <%= shoutout.content %></li>
   <% end %>
 </ul>
+<div class="userstar"></div>
+<span class="usershoutouts"><%= @user_shoutouts %></span>
 
 
