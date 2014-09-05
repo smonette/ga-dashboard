@@ -22,6 +22,7 @@ respond_to :html, :json
 
   end
   def show
+    @current_user = User.find_by_id(session[:id])
 
     # @button1 = @@button1
     # respond_with @button1
@@ -63,9 +64,8 @@ respond_to :html, :json
   def json_weather
     jsonfile = open('http://api.openweathermap.org/data/2.5/weather?lat=37.786958&lon=-122.394462').read
     @weather = Crack::JSON.parse(jsonfile)
-    @tempmath = (@weather["main"]["temp"] - 273)* 1.8 + 32
+    @tempmath = (((@weather["main"]["temp"] - 273)* 1.8 )+ 32) - 7
     @temp = @tempmath.to_s.split(".")[0]
-    @sunset = DateTime.strptime(@weather["sys"]["sunset"].to_s,'%s')
 
 
 

@@ -4,4 +4,8 @@
 </p>
   <p><%= @weather["weather"][0]["main"]  %></p>
 </div>
-<p class="happy text-center"><span id="countdown"></span>  until happy hour!</p>
+<div class="user-center">
+  <a href="/users" class="btn btn-default btn-md">See All Users</a>
+  <a href="/users/<%= @current_user.id %>/edit" class="btn btn-default btn-md">Edit Your Profile</a>
+  <a href="/logout" class="btn btn-danger btn-md"> Logout </a>
+</div>
