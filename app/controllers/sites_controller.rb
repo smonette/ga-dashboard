@@ -3,9 +3,9 @@ respond_to :html, :json
 
   # before_action :nokogiri_soups, :nokogiri_trucks
   def index
-    nokogiri_trucks
     nokogiri_soups
     xml_bart
+    json_weather
 
     @gaCourses = Workshop.all.order(created_at: :asc)
 
@@ -25,19 +25,6 @@ respond_to :html, :json
 
     # @button1 = @@button1
     # respond_with @button1
-  end
-
-  def nokogiri_trucks
-    urlTrucks = open('http://www.gfoodlounge.com/#schedule/').read
-
-    pageTrucks = Nokogiri::HTML(urlTrucks)
-    @trucks = []
-    # today = Time.now.strftime("%A, %B %d")
-
-    @trucks = pageTrucks.css('li.active a').map do |truck|
-      {title: truck}
-    end
-
   end
 
   def nokogiri_soups
@@ -67,6 +54,17 @@ respond_to :html, :json
     respond_to do |format|
       format.json { render json: Crack::XML.parse(xmlfile)['root'].to_json }
     end
+  end
+
+  def json_weather
+    jsonfile = open('http://api.openweathermap.org/data/2.5/weather?lat=37.786958&lon=-122.394462').read
+    @weather = Crack::JSON.parse(jsonfile)
+    @tempmath = (@weather["main"]["temp"] - 273)* 1.8 + 32
+    @temp = @tempmath.to_s.split(".")[0]
+    @sunset = DateTime.strptime(@weather["sys"]["sunset"].to_s,'%s')
+
+
+
   end
 
 end

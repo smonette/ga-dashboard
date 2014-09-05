@@ -251,7 +251,19 @@ h3.trucks span {
   top: -5px;
 }
 
+.weather {
+  text-align: center;
+  p { font-size: 18px;}
+  p.temp {
+    font-size: 45px;
+    margin-bottom: 0;
+  }
+}
 
-
+p.happy {
+  border-top: $border;
+  padding-top: 20px;
+  margin-top: 30px;
+}
 
 

@@ -1,1 +1,7 @@
-<h3 class="header-center">Bathroom Vacancy</h3>
+<h3 class="header-center">Current Weather</h3>
+<div class="weather">
+  <p class="temp"><%= @temp  %>&deg;   <img src="http://openweathermap.org/img/w/<%= @weather["weather"][0]["icon"]  %>.png"/>
+</p>
+  <p><%= @weather["weather"][0]["main"]  %></p>
+</div>
+<p class="happy text-center"><span id="countdown"></span>  until happy hour!</p>

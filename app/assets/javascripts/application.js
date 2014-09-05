@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require lwtcountdown.js
+
 $(document).on('page:load ready', function() {
 
 //   (function getAJAX(){
@@ -148,6 +150,19 @@ $(document).on('page:load ready', function() {
       });
 
 
-
+    function set_by_date() {
+      $('#countdown').stopCountDown();
+      $('#countdown').setCountDown({
+          targetDate: {
+              'day':      26,
+              'month':    9,
+              'year':     2014,
+              'hour':     17,
+              'min':      0,
+              'sec':      0
+          }
+      });
+    }
+    $('#countdown').startCountDown();
 
 })
