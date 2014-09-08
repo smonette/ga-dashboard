@@ -59,8 +59,14 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.2.1)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    ffaker (1.25.0)
     handlebars_assets (0.17.1)
       execjs (>= 1.2.9)
       multi_json
@@ -212,6 +218,8 @@ DEPENDENCIES
   crack
   dino
   dotenv-rails
+  factory_girl_rails
+  ffaker
   handlebars_assets
   jbuilder (~> 2.0)
   jquery-rails
